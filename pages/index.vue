@@ -147,10 +147,10 @@ export default {
   name: 'home',
   data: function() {
     return {
-      visible_about: true,
-      visible_works: true,
-      visible_skills: true,
-      visible_contact: true,
+      visible_about: false,
+      visible_works: false,
+      visible_skills: false,
+      visible_contact: false,
     web_works:[
       {link:"/works/ehon",imgUrl:"img/works/ehon/ehon.png",name:"保育用絵本アプリ"},
       {link:"/works/chat",imgUrl:"img/works/chat/chat.png",name:"チャットアプリ"},
@@ -176,6 +176,9 @@ export default {
       {imgUrl:"/img/skill_icon/aws.svg",name:"AWS",text:"Webアプリのインフラの実装に使用しています。AWSを用いて、Webサーバーを立ち上げサイトを公開したことがあります。その際は独自ドメインを取得し、プロキシサーバの導入やSSL化なども行いました。"},
     ]
     }
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
   },
   methods:{
     
