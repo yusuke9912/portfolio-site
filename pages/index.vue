@@ -16,9 +16,7 @@
 
         <!-- about -->
         <section class="about section" id="about">
-          <transition>
-          <div v-show="visible_about">
-          <div class="container">
+          <div class="container" v-bind:class="{show:visible_about}">
             <h2 class="title">About</h2>
             <div class="profile">
               <p class="profile-img">
@@ -33,16 +31,12 @@
               </div>
             </div>
           </div>
-          </div>
-          </transition>
         </section>
         <!-- /about -->
 
                 <!-- works -->
         <section class="works section" id="works">
-            <transition>
-          <div v-show="visible_works">
-          <div class="container">
+          <div class="container" v-bind:class="{show:visible_works}">
             <h2 class="title">Works</h2>
             <h3>Web Application</h3>
               <div class="works-list">
@@ -77,16 +71,12 @@
               </router-link>
              </div>
           </div>   
-          </div>         
-            </transition>
         </section>
         <!-- /works -->
 
         <!-- skill -->
         <section class="skill section" id="skill">
-          <transition>
-          <div v-show="visible_skills">
-          <div class="container">
+          <div class="container" v-bind:class="{show:visible_skills}">
             <h2 class="title">Skill</h2>
             <div class="skill-list">
               <div class="skill-item" v-for="skill in skills"  v-bind:key="skill.name">
@@ -102,16 +92,12 @@
               </div>
             </div>
           </div>
-          </div>
-          </transition>
         </section>
         <!-- /skill -->
 
         <!-- contact -->
         <section class="contact section" id="contact">
-          <transition>
-          <div v-show="visible_contact">
-          <div class="container">
+          <div class="container" v-bind:class="{show:visible_contact}">
             <h2 class="title">Contact</h2>
             <p class="lead">
               お問い合わせは、<br class="sp-only"/>メールにてお願いいたします。
@@ -126,8 +112,6 @@
               <p class="mail-adress">nakagawa.1202.n@gmail.com</p>
             </div>
           </div>
-          </div>
-          </transition>
         </section>
         <!-- /contact -->
       </main>
@@ -147,11 +131,12 @@ export default {
   name: 'home',
   data: function() {
     return {
-      visible_about: false,
-      visible_works: false,
-      visible_skills: false,
-      visible_contact: false,
+      visible_about: true,
+      visible_works: true,
+      visible_skills: true,
+      visible_contact: true,
     web_works:[
+      {link:"/works/portfolio",imgUrl:"img/works/portfolio/portfolio.png",name:"ポートフォリオサイト"},
       {link:"/works/ehon",imgUrl:"img/works/ehon/ehon.png",name:"保育用絵本アプリ"},
       {link:"/works/chat",imgUrl:"img/works/chat/chat.png",name:"チャットアプリ"},
       {link:"/works/typing",imgUrl:"img/works/typing/typing.png",name:"タイピングゲーム"},
@@ -179,22 +164,27 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
+    if(window.pageYOffset == 0){
+      this.visible_about = false;
+      this.visible_works = false;
+      this.visible_skills = false;
+      this.visible_contact = false;
+    }
   },
   methods:{
-    
     handleScroll() {
       let top;
       if (!this.visible_about) {
         top = document.getElementById("about").getBoundingClientRect().top;
-        this.visible_about = top < window.innerHeight -100;
+        this.visible_about = top < window.innerHeight -400;
       }
       if (!this.visible_works) {
         top = document.getElementById("works").getBoundingClientRect().top;
-        this.visible_works = top < window.innerHeight -100;
+        this.visible_works = top < window.innerHeight -400;
       }
       if (!this.visible_skills) {
         top = document.getElementById("skill").getBoundingClientRect().top;
-        this.visible_skills = top < window.innerHeight -100;
+        this.visible_skills = top < window.innerHeight -400;
       }
       if (!this.visible_contact) {
         top = document.getElementById("contact").getBoundingClientRect().top;
@@ -208,26 +198,3 @@ export default {
   }
 }
 </script>
-
-
-<style>
-/*フェード処理ここから */
-.v-enter {
-  opacity: 0;
-}
-
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 1s;
-}
-
-.v-enter-to {
-  opacity: 1;
-}
-
-.v-leave-to {
-  opacity: 0;
-  transition: opacity 1s;
-}
-/*フェード処理ここまで */
-</style>
