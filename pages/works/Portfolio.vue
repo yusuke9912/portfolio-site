@@ -25,6 +25,7 @@
               <img src="@/assets/img/skill_icon/css3.svg" alt="">
               <img src="@/assets/img/skill_icon/javascript.svg" alt="">
               <img src="@/assets/img/skill_icon/vue.svg" alt="">
+              <img src="@/assets/img/skill_icon/nuxt.svg" alt="">
               <img src="@/assets/img/skill_icon/firebase.svg" alt="">
             </p>
             <h3>担当</h3>
@@ -35,7 +36,7 @@
             </p>
             <h3>コーディングについて</h3>
             <p>
-              Vue.jsを使ってSPA化しました。また、スライドショーの作成やアニメーションの実装も行いました
+              Nuxt.jsを使ってSSR化しました。また、プラグインを利用したスライドショーやスクロール時のアニメーションの実装なども行いました。
             </p>
           </div>
           <div class="connection-link">

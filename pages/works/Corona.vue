@@ -32,7 +32,7 @@
             </p>
             <h3>コーディングについて</h3>
             <p>
-              <a href="https://omatomesan.com/fukuoka-covid19/" target="_blank" rel="noopener">コロナウイルスの感染者数をまとめているサイト</a>からデータを参照し、そのサイトが更新されるタイミングでLINEに通知が送られるようにしています。
+              <a href="https://omatomesan.com/fukuoka-covid19/" target="_blank" rel="noopener">コロナウイルスの感染者数をまとめているサイト</a>からデータを参照し、そのデータが更新されているとLINEに通知を送る処理をGASで定期実行しています。
             </p>
           </div>
           <div class="connection-link">
