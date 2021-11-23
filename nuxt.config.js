@@ -1,15 +1,21 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'portfolio-nuxt',
+    title: "Yusuke Nakagawa's Portfolio",
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ja'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: '中川雄介のポートフォリオサイトです。' },
+      { hid: 'og:site_name', property: 'og:site_name', content: "Yusuke Nakagawa' Portfolio" },
+      { hid: 'og:url', property: 'og:url', content: 'https://yusukesportfolio.web.app' },  //絶対パスで指定
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:image', property: 'og:image', content: '/img/ogp.png' },  //絶対パスで指定
+      { hid: 'og:title', property: 'og:title', content: "Yusuke Nakagawa' Portfolio" },
+      { hid: 'og:description', property: 'og:description', content: '中川雄介のポートフォリオサイトです。' },
+      { name: 'twitter:card', content: 'summary_large_image' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
