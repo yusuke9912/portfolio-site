@@ -47,20 +47,6 @@
                   <p class="works-name">{{ work.name }}</p>
                 </a>
               </div>
-
-              <!--
-              <div class="works-list" v-if="isShowed">
-                <a class="works-item" href="works/news.html">
-                  <div class="works-img">
-                    <img src="img/works/news/news.png" alt="" />
-                  </div>
-                  <p class="works-name">コロナウイルスに関するニュースをまとめたサイト</p>
-                </a>
-              </div>
-              <div class="show-works">
-                <button v-on:click="showWorks">{{ showWorksText }}</button>
-              </div>   
-              -->
              <h3>LINE Bot</h3>
              <div class="works-list">
               <router-link class="works-item" v-bind:to="work.link" v-for="work in bot_works" v-bind:key="work.name">
@@ -136,29 +122,104 @@ export default {
       visible_skills: true,
       visible_contact: true,
     web_works:[
-      {link:"/works/portfolio",imgUrl:"img/works/portfolio/portfolio.png",name:"ポートフォリオサイト"},
-      {link:"/works/ehon",imgUrl:"img/works/ehon/ehon.png",name:"保育用絵本アプリ"},
-      {link:"/works/chat",imgUrl:"img/works/chat/chat.png",name:"チャットアプリ"},
-      {link:"/works/typing",imgUrl:"img/works/typing/typing.png",name:"タイピングゲーム"},
-      {link:"/works/question",imgUrl:"img/works/questions/questions.png",name:"情報処理技術者試験の過去問演習アプリ"},
-      {link:"/works/todo",imgUrl:"img/works/todo/todo.png",name:"TODOリスト管理アプリ"},
-      {link:"/works/news",imgUrl:"img/works/news/news.png",name:"コロナウイルスに関するニュースをまとめたサイト"},
+      {
+        link:"/works/portfolio",
+        imgUrl:"img/works/portfolio/portfolio.png",
+        name:"ポートフォリオサイト"
+      },
+      {
+        link:"/works/ehon",
+        imgUrl:"img/works/ehon/ehon.png",
+        name:"保育用絵本アプリ"
+      },
+      {
+        link:"/works/chat",
+        imgUrl:"img/works/chat/chat.png",
+        name:"チャットアプリ"
+      },
+      {
+        link:"/works/typing",
+        imgUrl:"img/works/typing/typing.png",
+        name:"タイピングゲーム"
+      },
+      {
+        link:"/works/question",
+        imgUrl:"img/works/questions/questions.png",
+        name:"情報処理技術者試験の過去問演習アプリ"
+        },
+      {
+        link:"/works/todo",
+        imgUrl:"img/works/todo/todo.png",
+        name:"TODOリスト管理アプリ"
+      },
+      {
+        link:"/works/news",
+        imgUrl:"img/works/news/news.png",
+        name:"コロナウイルスに関するニュースをまとめたサイト"
+      },
     ],
     bot_works:[
-      {link:"/works/board",imgUrl:"img/works/board_bot/board_bot.png",name:"土木工学科掲示板の更新を通知するLINEbot"},
-      {link:"/works/corona",imgUrl:"img/works/corona_bot/corona_bot.png",name:"福岡県のコロナウイルス感染者数を通知するLINEbot"},
-      {link:"/works/dogcat",imgUrl:"img/works/dog-cat_ai/dog-cat_ai.png",name:"犬と猫を判別するLINEbot"},
+      {
+        link:"/works/board",
+        imgUrl:"img/works/board_bot/board_bot.png",
+        name:"土木工学科掲示板の更新を通知するLINEbot"
+      },
+      {
+        link:"/works/corona",
+        imgUrl:"img/works/corona_bot/corona_bot.png",
+        name:"福岡県のコロナウイルス感染者数を通知するLINEbot"
+      },
+      {
+        link:"/works/dogcat",
+        imgUrl:"img/works/dog-cat_ai/dog-cat_ai.png",
+        name:"犬と猫を判別するLINEbot"
+      },
     ],
     skills:[
-      {imgUrl:"/img/skill_icon/html5.svg",name:"HTML5",text:"Webサイトの作成に使用しています。metaタグの記入や、ファビコンの設定も可能です。"},
-      {imgUrl:"/img/skill_icon/css3.svg",name:"CSS3",text:"Webサイトの作成に使用しています。レスポンシブデザインへの対応も可能です。"},
-      {imgUrl:"/img/skill_icon/javascript.svg",name:"JavaScript",text:"スライダーやハンバーガーメニューなどWebサイトの動的な処理の実装に使用しています。ライブラリとしてはjQuery,フレームワークとしてはAngularの使用経験があります。 Ajaxを用いた非同期通信の実装経験もあります。"},
-      {imgUrl:"/img/skill_icon/php.svg",name:"PHP",text:"Webアプリのバックエンドの実装に使用しています。PHPを使って過去問演習アプリやコロナに関するニュースをスクレイピングするアプリを作ったことがあります。"},
-      {imgUrl:"/img/skill_icon/ruby.svg",name:"Ruby",text:"Webアプリのバックエンドの実装に使用しています。フレームワークであるRuby on Railsを使用して、タイピングゲームを作ったことがあります。"},
-      {imgUrl:"/img/skill_icon/python.svg",name:"Python",text:"主にWebスクレイピングに使用しています。BeautifulSoupやSeleniumといったライブラリを使用して、twitterや情報処理技術者試験の過去問をスクレイピングしたことがあります。"},
-      {imgUrl:"/img/skill_icon/wordpress.svg",name:"WordPress",text:"Webサイトの作成に使用しています。インターンにおいて社内HPをWordPressを使って作成・修正しました。プラグインの導入、バックアップ、環境の移行の経験があります。"},
-      {imgUrl:"/img/skill_icon/firebase.svg",name:"Firebase",text:"Webアプリのバックエンドの実装に使用しています。Firebaseを用いたwebサイトの公開、ユーザー認証の実装、メール送信機能、DBの導入の経験があります。リアルタイムチャットアプリを作成する際に使用しました。"},
-      {imgUrl:"/img/skill_icon/aws.svg",name:"AWS",text:"Webアプリのインフラの実装に使用しています。AWSを用いて、Webサーバーを立ち上げサイトを公開したことがあります。その際は独自ドメインを取得し、プロキシサーバの導入やSSL化なども行いました。"},
+      {
+        imgUrl:"/img/skill_icon/html5.svg",
+        name:"HTML5",
+        text:"Webサイトの作成に使用しています。metaタグの記入や、ファビコンの設定も可能です。"
+      },
+      {
+        imgUrl:"/img/skill_icon/css3.svg",
+        name:"CSS3",
+        text:"Webサイトの作成に使用しています。レスポンシブデザインへの対応も可能です。"
+      },
+      {
+        imgUrl:"/img/skill_icon/javascript.svg",
+        name:"JavaScript",
+        text:"スライダーやハンバーガーメニューなどWebサイトの動的な処理の実装に使用しています。ライブラリとしてはjQuery,フレームワークとしてはAngularの使用経験があります。 Ajaxを用いた非同期通信の実装経験もあります。"
+      },
+      {
+        imgUrl:"/img/skill_icon/php.svg",
+        name:"PHP",
+        text:"Webアプリのバックエンドの実装に使用しています。PHPを使って過去問演習アプリやコロナに関するニュースをスクレイピングするアプリを作ったことがあります。"
+      },
+      {
+        imgUrl:"/img/skill_icon/ruby.svg",
+        name:"Ruby",text:"Webアプリのバックエンドの実装に使用しています。フレームワークであるRuby on Railsを使用して、タイピングゲームを作ったことがあります。"
+      },
+      {
+        imgUrl:"/img/skill_icon/python.svg",
+        name:"Python",
+        text:"主にWebスクレイピングに使用しています。BeautifulSoupやSeleniumといったライブラリを使用して、twitterや情報処理技術者試験の過去問をスクレイピングしたことがあります。"
+      },
+      {
+        imgUrl:"/img/skill_icon/wordpress.svg",
+        name:"WordPress",
+        text:"Webサイトの作成に使用しています。インターンにおいて社内HPをWordPressを使って作成・修正しました。プラグインの導入、バックアップ、環境の移行の経験があります。"
+      },
+      {
+        imgUrl:"/img/skill_icon/firebase.svg",
+        name:"Firebase",
+        text:"Webアプリのバックエンドの実装に使用しています。Firebaseを用いたwebサイトの公開、ユーザー認証の実装、メール送信機能、DBの導入の経験があります。リアルタイムチャットアプリを作成する際に使用しました。"
+      },
+      {
+        imgUrl:"/img/skill_icon/aws.svg",
+        name:"AWS",
+        text:"Webアプリのインフラの実装に使用しています。AWSを用いて、Webサーバーを立ち上げサイトを公開したことがあります。その際は独自ドメインを取得し、プロキシサーバの導入やSSL化なども行いました。"
+      },
     ]
     }
   },

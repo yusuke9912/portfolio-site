@@ -469,7 +469,7 @@ img {
   }
 
   .skill-item {
-    flex: 0 0 48%;
+    flex: 0 0 100%;
     margin-right: 0;
     margin-bottom: 30px;
   }
