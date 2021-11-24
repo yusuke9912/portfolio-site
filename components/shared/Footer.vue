@@ -10,3 +10,22 @@ export default {
   name: 'shared-header',
 }
 </script>
+
+<style>
+.footer {
+  padding: 30px;
+  background-color: var(--main-color);
+}
+
+.copyright {
+  font-size: 10px;
+  text-align: center;
+  color: #eee;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 20px;
+  }
+}
+</style>
