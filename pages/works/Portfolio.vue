@@ -9,7 +9,7 @@
 
       <article class="article">
         <div class="article-container">
-          <h2 class="article-title">保育用絵本アプリ</h2>
+          <h2 class="article-title">ポートフォリオサイト</h2>
           <div class="article-body">
             <p class="article-image">
               <carousel :per-page="1">
@@ -24,7 +24,6 @@
               <img src="@/assets/img/skill_icon/html5.svg" alt="">
               <img src="@/assets/img/skill_icon/css3.svg" alt="">
               <img src="@/assets/img/skill_icon/javascript.svg" alt="">
-              <img src="@/assets/img/skill_icon/vue.svg" alt="">
               <img src="@/assets/img/skill_icon/nuxt.svg" alt="">
               <img src="@/assets/img/skill_icon/firebase.svg" alt="">
             </p>
@@ -40,7 +39,7 @@
             </p>
           </div>
           <div class="connection-link">
-              <a href="https://github.com/yusuke9912/portfolio_vue" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://github.com/yusuke9912/portfolio_nuxt" target="_blank" rel="noopener">GitHub</a>
             </div>
           <div class="home-link">
             <router-link to="/#works">作品一覧へ戻る</router-link>
