@@ -189,7 +189,7 @@ export default {
       {
         imgUrl:"/img/skill_icon/javascript.svg",
         name:"JavaScript",
-        text:"スライダーやハンバーガーメニューなどWebサイトの動的な処理の実装に使用しています。ライブラリとしてはjQuery,フレームワークとしてはAngularの使用経験があります。 Ajaxを用いた非同期通信の実装経験もあります。"
+        text:"スライダーやハンバーガーメニューなどWebサイトの動的な処理の実装に使用しています。ライブラリとしてはjQuery,フレームワークとしてはVueの使用経験があります。 Ajaxを用いた非同期通信の実装経験もあります。"
       },
       {
         imgUrl:"/img/skill_icon/php.svg",
