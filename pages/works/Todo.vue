@@ -20,7 +20,7 @@
             <p>
               業務でAngularを利用することになったため、Angularの勉強の一環として作成しました。
             </p>
-            <h3>使用技術/使用サービス</h3>
+            <h3>使用言語/ツール</h3>
             <p class="skill-img">
               <img src="@/assets/img/skill_icon/html5.svg" alt="">
               <img src="@/assets/img/skill_icon/css3.svg" alt="">

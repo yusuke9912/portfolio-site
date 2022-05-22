@@ -22,7 +22,7 @@
             <p>
               寿司打というタイピングゲームにハマっていた時、自分で一から同じものを作ってみたいと思い立ったため作成しました。家族や知り合いにも遊んでもらい、ランキングでスコアを競いました。
             </p>
-            <h3>使用技術/使用サービス</h3>
+            <h3>使用言語/ツール</h3>
             <p class="skill-img">
               <img src="@/assets/img/skill_icon/html5.svg" alt="">
               <img src="@/assets/img/skill_icon/css3.svg" alt="">

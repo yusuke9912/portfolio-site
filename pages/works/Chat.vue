@@ -24,9 +24,9 @@
               </carousel>
             </p>
             <p>
-              株式会社SICでのインターン中に作成しました。インターンの日報を共有するツールとして利用してもらっています。
+              株式会社SICでのインターン中に作成しました。インターンの日報を共有するツールとして利用してもらいました。
             </p>
-            <h3>使用技術/使用サービス</h3>
+            <h3>使用言語/ツール</h3>
             <p class="skill-img">
               <img src="@/assets/img/skill_icon/html5.svg" alt="">
               <img src="@/assets/img/skill_icon/css3.svg" alt="">

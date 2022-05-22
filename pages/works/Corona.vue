@@ -19,7 +19,7 @@
             <p>
               福岡県のコロナウイルスの感染者数を毎日自動で通知するLINEbotです。最初は感染者数を通知するだけのものでしたが、他の人の意見をもとに直近1週間平均と７日前1週間平均を出すようにしました。
             </p>
-            <h3>使用技術/使用サービス</h3>
+            <h3>使用言語/ツール</h3>
             <p class="skill-img">
               <img src="@/assets/img/skill_icon/gas.svg" alt="">
               <img src="@/assets/img/skill_icon/line.svg" alt="">

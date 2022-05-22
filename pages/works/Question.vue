@@ -21,7 +21,7 @@
             <p>
               基本情報技術者試験を受ける際、自分で過去問演習アプリを作って勉強しようと思い立ったため作成しました。インターン先の社員さんがITパスポートの試験を受けるため、ITパスポートの過去問も解けるようにしました。
             </p>
-            <h3>使用技術/使用サービス</h3>
+            <h3>使用言語/ツール</h3>
             <p class="skill-img">
               <img src="@/assets/img/skill_icon/html5.svg" alt="">
               <img src="@/assets/img/skill_icon/css3.svg" alt="">
