@@ -40,6 +40,7 @@
       <section class="works section" id="works">
         <div class="container" v-bind:class="{ show: visible_works }">
           <h2 class="title">Works</h2>
+          <!-- web application -->
           <h3>Web Application</h3>
           <div class="works-list">
             <a
@@ -54,6 +55,24 @@
               <p class="works-name">{{ work.name }}</p>
             </a>
           </div>
+          <!-- /web application -->
+          <!-- native application -->
+          <h3>Native Application</h3>
+          <div class="works-list">
+            <a
+              class="works-item"
+              v-bind:href="work.link"
+              v-for="work in native_works"
+              v-bind:key="work.name"
+            >
+              <div class="works-img">
+                <img v-bind:src="work.imgUrl" alt="" />
+              </div>
+              <p class="works-name">{{ work.name }}</p>
+            </a>
+          </div>
+          <!-- /native application -->
+          <!-- line bot -->
           <h3>LINE Bot</h3>
           <div class="works-list">
             <router-link
@@ -69,6 +88,7 @@
             </router-link>
           </div>
         </div>
+        <!-- /line bot -->
       </section>
       <!-- /works -->
 
@@ -177,6 +197,13 @@ export default {
           link: "/works/news",
           imgUrl: "img/works/news/news.png",
           name: "コロナウイルスに関するニュースをまとめたサイト",
+        },
+      ],
+      native_works:[
+        {
+          link: "/works/bond",
+          imgUrl: "img/works/bond/bond.png",
+          name: '「自分」ではなく、「誰か」をよく見せるSNS "BOND"',
         },
       ],
       bot_works: [
