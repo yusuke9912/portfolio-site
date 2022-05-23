@@ -176,7 +176,7 @@ export default {
         {
           link: "/works/chat",
           imgUrl: "img/works/chat/chat.png",
-          name: "チャットアプリ",
+          name: "チャットツール",
         },
         {
           link: "/works/typing",
@@ -186,12 +186,12 @@ export default {
         {
           link: "/works/question",
           imgUrl: "img/works/questions/questions.png",
-          name: "情報処理技術者試験の過去問演習アプリ",
+          name: "情報処理技術者試験の過去問演習サイト",
         },
         {
           link: "/works/todo",
           imgUrl: "img/works/todo/todo.png",
-          name: "TODOリスト管理アプリ",
+          name: "TODO管理ツール",
         },
         {
           link: "/works/news",

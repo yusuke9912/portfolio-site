@@ -13,7 +13,7 @@
           <div class="article-body">
             <p class="article-image">
               <carousel :per-page="1">
-                <slide><img src="@/assets/img/works/portfolio/portfolio.png" alt=""></slide>
+                <slide><img src="@/assets/img/works/portfolio/portfolio.png" alt="サイトのスクリーンショット"></slide>
               </carousel>
             </p>
             <p>
@@ -21,11 +21,11 @@
             </p>
             <h3>使用言語/ツール</h3>
             <p class="skill-img">
-              <img src="@/assets/img/skill_icon/html5.svg" alt="">
-              <img src="@/assets/img/skill_icon/css3.svg" alt="">
-              <img src="@/assets/img/skill_icon/javascript.svg" alt="">
-              <img src="@/assets/img/skill_icon/nuxt.svg" alt="">
-              <img src="@/assets/img/skill_icon/firebase.svg" alt="">
+              <img src="@/assets/img/skill_icon/html5.svg" alt="HTML5のアイコン">
+              <img src="@/assets/img/skill_icon/css3.svg" alt="CSS3のアイコン">
+              <img src="@/assets/img/skill_icon/javascript.svg" alt="JavaScriptのアイコン">
+              <img src="@/assets/img/skill_icon/nuxt.svg" alt="Nuxtのアイコン">
+              <img src="@/assets/img/skill_icon/firebase.svg" alt="Firebaseのアイコン">
             </p>
             <h3>担当</h3>
             <p>デザイン・コーディング</p>

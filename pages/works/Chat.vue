@@ -9,18 +9,18 @@
 
       <article class="article">
         <div class="article-container">
-          <h2 class="article-title">チャットアプリ</h2>
+          <h2 class="article-title">チャットツール</h2>
           <div class="article-body">
             <p class="article-image">
               <carousel :per-page="1">
-                <slide><img src="@/assets/img/works/chat/chat.png" alt="絵本アプリのスナップショット"></slide>
-                <slide><img src="@/assets/img/works/chat/chat2.png" alt="絵本アプリのスナップショット"></slide>
-                <slide><img src="@/assets/img/works/chat/chat3.png" alt="絵本アプリのスナップショット"></slide>
-                <slide><img src="@/assets/img/works/chat/chat4.png" alt="絵本アプリのスナップショット"></slide>
-                <slide><img src="@/assets/img/works/chat/chat5.png" alt="絵本アプリのスナップショット"></slide>
-                <slide><img src="@/assets/img/works/chat/chat6.png" alt="絵本アプリのスナップショット"></slide>
-                <slide><img src="@/assets/img/works/chat/chat7.png" alt="絵本アプリのスナップショット"></slide>
-                <slide><img src="@/assets/img/works/chat/chat8.png" alt="絵本アプリのスナップショット"></slide>
+                <slide><img src="@/assets/img/works/chat/chat.png" alt="チャットツールのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/chat/chat2.png" alt="チャットツールのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/chat/chat3.png" alt="チャットツールのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/chat/chat4.png" alt="チャットツールのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/chat/chat5.png" alt="チャットツールのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/chat/chat6.png" alt="チャットツールのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/chat/chat7.png" alt="チャットツールのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/chat/chat8.png" alt="チャットツールのスクリーンショット"></slide>
               </carousel>
             </p>
             <p>
@@ -28,10 +28,10 @@
             </p>
             <h3>使用言語/ツール</h3>
             <p class="skill-img">
-              <img src="@/assets/img/skill_icon/html5.svg" alt="">
-              <img src="@/assets/img/skill_icon/css3.svg" alt="">
-              <img src="@/assets/img/skill_icon/javascript.svg" alt="">
-              <img src="@/assets/img/skill_icon/firebase.svg" alt="">
+              <img src="@/assets/img/skill_icon/html5.svg" alt="HTML5のアイコン">
+              <img src="@/assets/img/skill_icon/css3.svg" alt="CSS3のアイコン">
+              <img src="@/assets/img/skill_icon/javascript.svg" alt="JavaScriptのアイコン">
+              <img src="@/assets/img/skill_icon/firebase.svg" alt="Firebaseのアイコン">
             </p>
             <h3>担当</h3>
             <p>デザイン・コーディング</p>

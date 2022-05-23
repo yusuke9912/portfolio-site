@@ -13,7 +13,7 @@
           <div class="article-body">
             <p class="article-image"> 
               <carousel :per-page="1">
-                <slide><img src="@/assets/img/works/bond/bond.png" alt=""></slide>
+                <slide><img src="@/assets/img/works/bond/bond.png" alt="bondのスクリーンショット"></slide>
               </carousel>
             </p>
             <p>
@@ -21,8 +21,8 @@
             </p>
             <h3>使用技術/ツール</h3>
             <p class="skill-img">
-              <img src="@/assets/img/skill_icon/swift.svg" alt="">
-              <img src="@/assets/img/skill_icon/firebase.svg" alt="">
+              <img src="@/assets/img/skill_icon/swift.svg" alt="swiftアイコン">
+              <img src="@/assets/img/skill_icon/firebase.svg" alt="firebaseアイコン">
             </p>
             <h3>担当</h3>
             <p>コーディング</p>

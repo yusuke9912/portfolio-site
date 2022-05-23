@@ -9,12 +9,12 @@
 
       <article class="article">
         <div class="article-container">
-          <h2 class="article-title">TODOリスト管理アプリ</h2>
+          <h2 class="article-title">TODO管理ツール</h2>
           <div class="article-body">
             <p class="article-image">
               <carousel :per-page="1">
-                <slide><img src="@/assets/img/works/todo/todo.png" alt=""></slide>
-                <slide><img src="@/assets/img/works/todo/todo2.png" alt=""></slide>
+                <slide><img src="@/assets/img/works/todo/todo.png" alt="TODO管理ツールのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/todo/todo2.png" alt="TODO管理ツールのスクリーンショット"></slide>
               </carousel>
             </p>
             <p>
@@ -22,11 +22,11 @@
             </p>
             <h3>使用言語/ツール</h3>
             <p class="skill-img">
-              <img src="@/assets/img/skill_icon/html5.svg" alt="">
-              <img src="@/assets/img/skill_icon/css3.svg" alt="">
-              <img src="@/assets/img/skill_icon/typescript.svg" alt="">
-              <img src="@/assets/img/skill_icon/angular.svg" alt="">
-              <img src="@/assets/img/skill_icon/firebase.svg" alt="">
+              <img src="@/assets/img/skill_icon/html5.svg" alt="HTML5のアイコン">
+              <img src="@/assets/img/skill_icon/css3.svg" alt="CSS3のアイコン">
+              <img src="@/assets/img/skill_icon/typescript.svg" alt="TypeScriptのアイコン">
+              <img src="@/assets/img/skill_icon/angular.svg" alt="Angularのアイコン">
+              <img src="@/assets/img/skill_icon/firebase.svg" alt="Firebaseのアイコン">
             </p>
             <h3>担当</h3>
             <p>デザイン・コーディング</p>

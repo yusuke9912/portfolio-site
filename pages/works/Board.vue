@@ -13,8 +13,8 @@
           <div class="article-body">
             <p class="article-image small">
               <carousel :per-page="1">
-                <slide><img src="@/assets/img/works/board_bot/board_bot.png" alt=""></slide>
-                <slide><img src="@/assets/img/works/board_bot/board_bot2.png" alt=""></slide>
+                <slide><img src="@/assets/img/works/board_bot/board_bot.png" alt="LINEbotのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/board_bot/board_bot2.png" alt="LINEbotのスクリーンショット"></slide>
               </carousel>
             </p>
             <p>
@@ -22,8 +22,8 @@
             </p>
             <h3>使用言語/ツール</h3>
             <p class="skill-img">
-              <img src="@/assets/img/skill_icon/gas.svg" alt="">
-              <img src="@/assets/img/skill_icon/line.svg" alt="">
+              <img src="@/assets/img/skill_icon/gas.svg" alt="GASのアイコン">
+              <img src="@/assets/img/skill_icon/line.svg" alt="LINEのアイコン">
             </p>
             <h3>担当</h3>
             <p>デザイン・コーディング</p>

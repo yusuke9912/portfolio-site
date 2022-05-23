@@ -9,13 +9,13 @@
 
       <article class="article">
         <div class="article-container">
-          <h2 class="article-title">情報処理技術者試験の過去問演習アプリ</h2>
+          <h2 class="article-title">情報処理技術者試験の過去問演習サイト</h2>
           <div class="article-body">
             <p class="article-image">
               <carousel :per-page="1">
-                <slide><img src="@/assets/img/works/questions/questions.png" alt=""></slide>
-                <slide><img src="@/assets/img/works/questions/questions2.png" alt=""></slide>
-                <slide><img src="@/assets/img/works/questions/questions3.png" alt=""></slide>
+                <slide><img src="@/assets/img/works/questions/questions.png" alt="サイトのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/questions/questions2.png" alt="サイトのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/questions/questions3.png" alt="サイトのスクリーンショット"></slide>
               </carousel>
             </p>
             <p>
@@ -23,11 +23,11 @@
             </p>
             <h3>使用言語/ツール</h3>
             <p class="skill-img">
-              <img src="@/assets/img/skill_icon/html5.svg" alt="">
-              <img src="@/assets/img/skill_icon/css3.svg" alt="">
-              <img src="@/assets/img/skill_icon/javascript.svg" alt="">
-              <img src="@/assets/img/skill_icon/php.svg" alt="">
-              <img src="@/assets/img/skill_icon/aws.svg" alt="">
+              <img src="@/assets/img/skill_icon/html5.svg" alt="HTML5のアイコン">
+              <img src="@/assets/img/skill_icon/css3.svg" alt="CSS3のアイコン">
+              <img src="@/assets/img/skill_icon/javascript.svg" alt="JavaScriptのアイコン">
+              <img src="@/assets/img/skill_icon/php.svg" alt="PHPのアイコン">
+              <img src="@/assets/img/skill_icon/aws.svg" alt="AWSのアイコン">
             </p>
             <h3>担当</h3>
             <p>デザイン・コーディング</p>

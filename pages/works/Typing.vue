@@ -13,10 +13,10 @@
           <div class="article-body">
             <p class="article-image"> 
               <carousel :per-page="1">
-                <slide><img src="@/assets/img/works/typing/typing.png" alt=""></slide>
-                <slide><img src="@/assets/img/works/typing/typing2.png" alt=""></slide>
-                <slide><img src="@/assets/img/works/typing/typing3.png" alt=""></slide>
-                <slide><img src="@/assets/img/works/typing/typing4.png" alt=""></slide>
+                <slide><img src="@/assets/img/works/typing/typing.png" alt="タイピングゲームのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/typing/typing2.png" alt="タイピングゲームのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/typing/typing3.png" alt="タイピングゲームのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/typing/typing4.png" alt="タイピングゲームのスクリーンショット"></slide>
               </carousel>
             </p>
             <p>
@@ -24,11 +24,11 @@
             </p>
             <h3>使用言語/ツール</h3>
             <p class="skill-img">
-              <img src="@/assets/img/skill_icon/html5.svg" alt="">
-              <img src="@/assets/img/skill_icon/css3.svg" alt="">
-              <img src="@/assets/img/skill_icon/javascript.svg" alt="">
-              <img src="@/assets/img/skill_icon/rails.svg" style="width:90px" alt="">
-              <img src="@/assets/img/skill_icon/heroku.svg" alt="">
+              <img src="@/assets/img/skill_icon/html5.svg" alt="HTML5のアイコン">
+              <img src="@/assets/img/skill_icon/css3.svg" alt="CSS3のアイコン">
+              <img src="@/assets/img/skill_icon/javascript.svg" alt="JavaScriptのアイコン">
+              <img src="@/assets/img/skill_icon/rails.svg" style="width:90px" alt="Ruby on Railsのアイコン">
+              <img src="@/assets/img/skill_icon/heroku.svg" alt="Herokuのアイコン">
             </p>
             <h3>担当</h3>
             <p>デザイン・コーディング</p>
