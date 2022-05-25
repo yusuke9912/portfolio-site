@@ -27,12 +27,12 @@
               株式会社SICでのインターン中に作成しました。インターンの日報を共有するツールとして利用してもらいました。
             </p>
             <h3>使用言語/ツール</h3>
-            <p class="skill-img">
-              <img src="@/assets/img/skill_icon/html5.svg" alt="HTML5のアイコン">
-              <img src="@/assets/img/skill_icon/css3.svg" alt="CSS3のアイコン">
-              <img src="@/assets/img/skill_icon/javascript.svg" alt="JavaScriptのアイコン">
-              <img src="@/assets/img/skill_icon/firebase.svg" alt="Firebaseのアイコン">
-            </p>
+            <ul class="skill-img">
+              <li><img src="@/assets/img/skill_icon/html5.svg" alt="HTML5のアイコン"><span class="tooltip">HTML5</span></li>
+              <li><img src="@/assets/img/skill_icon/css3.svg" alt="CSS3のアイコン"><span class="tooltip">CSS3</span></li>
+              <li><img src="@/assets/img/skill_icon/javascript.svg" alt="JavaScriptのアイコン"><span class="tooltip">JavaScript</span></li>
+              <li><img src="@/assets/img/skill_icon/firebase.svg" alt="Firebaseのアイコン"><span class="tooltip">Firebase</span></li>
+            </ul>
             <h3>担当</h3>
             <p>デザイン・コーディング</p>
             <h3>デザインについて</h3>

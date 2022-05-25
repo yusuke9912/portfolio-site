@@ -21,13 +21,13 @@
               業務でAngularを利用することになったため、Angularの勉強の一環として作成しました。
             </p>
             <h3>使用言語/ツール</h3>
-            <p class="skill-img">
-              <img src="@/assets/img/skill_icon/html5.svg" alt="HTML5のアイコン">
-              <img src="@/assets/img/skill_icon/css3.svg" alt="CSS3のアイコン">
-              <img src="@/assets/img/skill_icon/typescript.svg" alt="TypeScriptのアイコン">
-              <img src="@/assets/img/skill_icon/angular.svg" alt="Angularのアイコン">
-              <img src="@/assets/img/skill_icon/firebase.svg" alt="Firebaseのアイコン">
-            </p>
+            <ul class="skill-img">
+              <li><img src="@/assets/img/skill_icon/html5.svg" alt="HTML5のアイコン"><span class="tooltip">HTML5</span></li>
+              <li><img src="@/assets/img/skill_icon/css3.svg" alt="CSS3のアイコン"><span class="tooltip">CSS3</span></li>
+              <li><img src="@/assets/img/skill_icon/typescript.svg" alt="TypeScriptのアイコン"><span class="tooltip">TypeScript</span></li>
+              <li><img src="@/assets/img/skill_icon/angular.svg" alt="Angularのアイコン"><span class="tooltip">Angular</span></li>
+              <li><img src="@/assets/img/skill_icon/firebase.svg" alt="Firebaseのアイコン"><span class="tooltip">Firebasre</span></li>
+            </ul>
             <h3>担当</h3>
             <p>デザイン・コーディング</p>
             <h3>デザインについて</h3>

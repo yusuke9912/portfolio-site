@@ -171,7 +171,6 @@ img {
   background-color: #4c4c4c;
   border-radius: 30px;
 }
-
 /*--------------------------------
  Skill
 ---------------------------------*/
@@ -207,6 +206,10 @@ img {
   margin-right: 20px;
 }
 
+.skill-img li{
+  position: relative;
+}
+
 .skill-img img{
   width:60px;
   margin-right: 10px;
@@ -224,6 +227,34 @@ img {
   font-size: 15px;
   line-height: 1.8;
 }
+
+.tooltip {
+	position: absolute;
+	bottom: -50px;
+	left: 0px;
+	padding: 6px 10px;
+	background: #01579B;
+	color: #FFF;
+	font-size: 12px;
+	border-radius: 10px;
+	transition: 0.5s;
+	opacity: 0;
+  filter: drop-shadow(5px 4px 2px rgba(0, 0, 0, 0.5));
+}
+
+.tooltip:after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 16px;
+	border: 5px solid transparent;
+	border-bottom: 14px solid #01579B;
+}
+
+li:hover .tooltip {
+	opacity: 1;
+}
+
 
 /*--------------------------------
  About

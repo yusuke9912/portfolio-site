@@ -20,10 +20,10 @@
               送信された画像の中に写っているものが犬か猫かをAIを用いて判別するLINEbotです。<a href="https://aimaker.io/">AIメーカー</a>という面白いサービスを見つけたので作成しました。
             </p>
             <h3>使用言語/ツール</h3>
-            <p class="skill-img">
-              <img src="@/assets/img/skill_icon/gas.svg" alt="GASのアイコン">
-              <img src="@/assets/img/skill_icon/line.svg" alt="LINEのアイコン">
-            </p>
+            <ul class="skill-img">
+              <li><img src="@/assets/img/skill_icon/gas.svg" alt="GASのアイコン"><span class="tooltip">GAS</span></li>
+              <li><img src="@/assets/img/skill_icon/line.svg" alt="LINEのアイコン"><span class="tooltip">LINE</span></li>
+            </ul>
             <h3>担当</h3>
             <p>デザイン・コーディング</p>
             <h3>デザインについて</h3>

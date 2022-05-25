@@ -20,7 +20,7 @@
           <h2 class="title">About</h2>
           <div class="profile">
             <p class="profile-img">
-              <img src="@/assets/img/profile.jpg" alt="" />
+              <img src="@/assets/img/profile.jpg" alt="プロフィール画像" />
             </p>
             <div class="profile-body">
               <p>
@@ -50,7 +50,7 @@
               v-bind:key="work.name"
             >
               <div class="works-img">
-                <img v-bind:src="work.imgUrl" alt="" />
+                <img v-bind:src="work.imgUrl" v-bind:alt="work.alt" />
               </div>
               <p class="works-name">{{ work.name }}</p>
             </a>
@@ -66,7 +66,7 @@
               v-bind:key="work.name"
             >
               <div class="works-img">
-                <img v-bind:src="work.imgUrl" alt="" />
+                <img v-bind:src="work.imgUrl" v-bind:alt="work.alt" />
               </div>
               <p class="works-name">{{ work.name }}</p>
             </a>
@@ -82,7 +82,7 @@
               v-bind:key="work.name"
             >
               <div class="works-img">
-                <img v-bind:src="work.imgUrl" alt="" />
+                <img v-bind:src="work.imgUrl" v-bind:alt="work.alt" />
               </div>
               <p class="works-name">{{ work.name }}</p>
             </router-link>
@@ -103,7 +103,7 @@
               v-bind:key="skill.name"
             >
               <p class="skill-img">
-                <img v-bind:src="skill.imgUrl" alt="" />
+                <img v-bind:src="skill.imgUrl" v-bind:alt="skill.alt" />
               </p>
               <div class="skill-body">
                 <h3 class="skill-name">{{ skill.name }}</h3>
@@ -171,31 +171,37 @@ export default {
         {
           link: "/works/portfolio",
           imgUrl: "img/works/portfolio/portfolio.png",
+          alt:"ポートフォリオサイトのサムネイル",
           name: "ポートフォリオサイト",
         },
         {
           link: "/works/chat",
           imgUrl: "img/works/chat/chat.png",
+          alt:"チャットツールのサムネイル",
           name: "チャットツール",
         },
         {
           link: "/works/typing",
           imgUrl: "img/works/typing/typing.png",
+          alt:"タイピングゲームのサムネイル",
           name: "タイピングゲーム",
         },
         {
           link: "/works/question",
           imgUrl: "img/works/questions/questions.png",
+          alt:"過去問演習サイトのサムネイル",
           name: "情報処理技術者試験の過去問演習サイト",
         },
         {
           link: "/works/todo",
           imgUrl: "img/works/todo/todo.png",
+          alt:"TODO管理ツールのサムネイル",
           name: "TODO管理ツール",
         },
         {
           link: "/works/news",
           imgUrl: "img/works/news/news.png",
+          alt:"まとめサイトのサムネイル",
           name: "コロナウイルスに関するニュースをまとめたサイト",
         },
       ],
@@ -203,6 +209,7 @@ export default {
         {
           link: "/works/bond",
           imgUrl: "img/works/bond/bond.png",
+          alt:"BONDのサムネイル",
           name: '「自分」ではなく、「誰か」をよく見せるSNS "BOND"',
         },
       ],
@@ -210,62 +217,74 @@ export default {
         {
           link: "/works/board",
           imgUrl: "img/works/board_bot/board_bot.png",
+          alt:"掲示板通知LINEbotのサムネイル",
           name: "土木工学科掲示板の更新を通知するLINEbot",
         },
         {
           link: "/works/corona",
           imgUrl: "img/works/corona_bot/corona_bot.png",
+          alt:"感染者数通知LINEbotのサムネイル",
           name: "福岡県のコロナウイルス感染者数を通知するLINEbot",
         },
         {
           link: "/works/dogcat",
           imgUrl: "img/works/dog-cat_ai/dog-cat_ai.png",
+          alt:"犬猫判別LINEbotのサムネイル",
           name: "犬と猫を判別するLINEbot",
         },
       ],
       skills: [
         {
           imgUrl: "/img/skill_icon/html5.svg",
+          alt:"HTML5のアイコン",
           name: "HTML5",
           text: "Webサイトの作成に使用しています。metaタグの記入や、ファビコンの設定も可能です。",
         },
         {
           imgUrl: "/img/skill_icon/css3.svg",
+          alt:"CSS3のアイコン",
           name: "CSS3",
           text: "Webサイトの作成に使用しています。レスポンシブデザインへの対応も可能です。",
         },
         {
           imgUrl: "/img/skill_icon/javascript.svg",
+          alt:"JacaScriptのアイコン",
           name: "JavaScript",
           text: "スライダーやハンバーガーメニューなどWebサイトの動的な処理の実装に使用しています。ライブラリとしてはjQuery,フレームワークとしてはVueの使用経験があります。 Ajaxを用いた非同期通信の実装経験もあります。",
         },
         {
           imgUrl: "/img/skill_icon/php.svg",
+          alt:"PHPのアイコン",
           name: "PHP",
           text: "Webアプリのバックエンドの実装に使用しています。PHPを使って過去問演習アプリやコロナに関するニュースをスクレイピングするアプリを作ったことがあります。",
         },
         {
           imgUrl: "/img/skill_icon/ruby.svg",
+          alt:"Rubyのアイコン",
           name: "Ruby",
           text: "Webアプリのバックエンドの実装に使用しています。フレームワークであるRuby on Railsを使用して、タイピングゲームを作ったことがあります。",
         },
         {
           imgUrl: "/img/skill_icon/python.svg",
+          alt:"Pythonのアイコン",
           name: "Python",
           text: "主にWebスクレイピングに使用しています。BeautifulSoupやSeleniumといったライブラリを使用して、twitterや情報処理技術者試験の過去問をスクレイピングしたことがあります。",
         },
         {
           imgUrl: "/img/skill_icon/wordpress.svg",
+          alt:"WordPressのアイコン",
           name: "WordPress",
           text: "Webサイトの作成に使用しています。インターンにおいて社内HPをWordPressを使って作成・修正しました。プラグインの導入、バックアップ、環境の移行の経験があります。",
         },
         {
           imgUrl: "/img/skill_icon/firebase.svg",
+          alt:"Firebaseのアイコン",
           name: "Firebase",
           text: "Webアプリのバックエンドの実装に使用しています。Firebaseを用いたwebサイトの公開、ユーザー認証の実装、メール送信機能、DBの導入の経験があります。リアルタイムチャットアプリを作成する際に使用しました。",
         },
         {
           imgUrl: "/img/skill_icon/aws.svg",
+          alt:"AWSのアイコン",
           name: "AWS",
           text: "Webアプリのインフラの実装に使用しています。AWSを用いて、Webサーバーを立ち上げサイトを公開したことがあります。その際は独自ドメインを取得し、プロキシサーバの導入やSSL化なども行いました。",
         },

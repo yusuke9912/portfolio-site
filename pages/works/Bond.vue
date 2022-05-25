@@ -20,10 +20,10 @@
               Twitterで知り合った<a href="https://www.kyusan-u.ac.jp/news/social_business_plan_contest-6th/">中丸与志哉さん</a>率いるチーム「想」において、アプリの開発を行いました。<br>このアプリを通して大切な人へのメッセージを送りあってもらい、リアルな世界でのコミュニケーションを変えていきたいと思っています。
             </p>
             <h3>使用技術/ツール</h3>
-            <p class="skill-img">
-              <img src="@/assets/img/skill_icon/swift.svg" alt="swiftアイコン">
-              <img src="@/assets/img/skill_icon/firebase.svg" alt="firebaseアイコン">
-            </p>
+            <ul class="skill-img">
+              <li><img src="@/assets/img/skill_icon/swift.svg" alt="Swiftのアイコン"><span class="tooltip">Swift</span></li>
+              <li><img src="@/assets/img/skill_icon/firebase.svg" alt="Firebaseのアイコン"><span class="tooltip">Firebase</span></li>
+            </ul>
             <h3>担当</h3>
             <p>コーディング</p>
             <h3>コーディングについて</h3>

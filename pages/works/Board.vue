@@ -21,10 +21,10 @@
               自分が在籍する土木工学科の掲示板が更新されると通知を送るLINEbotです。掲示板の確認の手間をなくして、見落としを防止するために作成しました。現在土木工学科80人のうち、52人に使用してもらっています。
             </p>
             <h3>使用言語/ツール</h3>
-            <p class="skill-img">
-              <img src="@/assets/img/skill_icon/gas.svg" alt="GASのアイコン">
-              <img src="@/assets/img/skill_icon/line.svg" alt="LINEのアイコン">
-            </p>
+            <ul class="skill-img">
+              <li><img src="@/assets/img/skill_icon/gas.svg" alt="GASのアイコン"><span class="tooltip">GAS</span></li>
+              <li><img src="@/assets/img/skill_icon/line.svg" alt="LINEのアイコン"><span class="tooltip">LINE</span></li>
+            </ul>
             <h3>担当</h3>
             <p>デザイン・コーディング</p>
             <h3>デザインについて</h3>

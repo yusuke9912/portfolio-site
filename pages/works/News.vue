@@ -20,13 +20,13 @@
                 コロナウイルスに関する情報を効率よく集めるため、コロナウイルスに関する記事をまとめたサイトを作成しました。
               </p>
               <h3>使用言語/ツール</h3>
-            <p class="skill-img">
-              <img src="@/assets/img/skill_icon/html5.svg" alt="HTML5のアイコン">
-              <img src="@/assets/img/skill_icon/css3.svg" alt="CSS3のアイコン">
-              <img src="@/assets/img/skill_icon/javascript.svg" alt="JavaScriptのアイコン">
-              <img src="@/assets/img/skill_icon/php.svg" alt="PHPのアイコン">
-              <img src="@/assets/img/skill_icon/heroku.svg" alt="Herokuのアイコン">
-            </p>
+            <ul class="skill-img">
+              <li><img src="@/assets/img/skill_icon/html5.svg" alt="HTML5のアイコン"><span class="tooltip">HTML5</span></li>
+              <li><img src="@/assets/img/skill_icon/css3.svg" alt="CSS3のアイコン"><span class="tooltip">CSS3</span></li>
+              <li><img src="@/assets/img/skill_icon/javascript.svg" alt="JavaScriptのアイコン"><span class="tooltip">JavaScript</span></li>
+              <li><img src="@/assets/img/skill_icon/php.svg" alt="PHPのアイコン"><span class="tooltip">PHP</span></li>
+              <li><img src="@/assets/img/skill_icon/heroku.svg" alt="Herokuのアイコン"><span class="tooltip">Heroku</span></li>
+            </ul>
               <h3>担当</h3>
               <p>デザイン・コーディング</p>
               <h3>デザインについて</h3>
