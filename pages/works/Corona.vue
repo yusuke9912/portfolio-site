@@ -17,7 +17,7 @@
               </carousel>
             </p>
             <p>
-              福岡県のコロナウイルスの感染者数を毎日自動で通知するLINEbotです。最初は感染者数を通知するだけのものでしたが、他の人の意見をもとに直近1週間平均と７日前1週間平均を出すようにしました。
+              福岡県のコロナウイルスの感染者数を毎日自動で通知するLINEbotです。最初は感染者数を通知するだけのものでしたが、ユーザーからの意見を取り入れ直近1週間平均と７日前1週間平均を出すようにしました。
             </p>
             <h3>使用言語/ツール</h3>
             <p class="skill-img">
@@ -32,7 +32,7 @@
             </p>
             <h3>コーディングについて</h3>
             <p>
-              <a href="https://omatomesan.com/fukuoka-covid19/" target="_blank" rel="noopener">コロナウイルスの感染者数をまとめているサイト</a>からデータを参照し、そのデータが更新されているとLINEに通知を送る処理をGASで定期実行しています。
+              <a href="https://www.pref.fukuoka.lg.jp/contents/covid19-hassei.html" target="_blank" rel="noopener">福岡県のHP</a>からデータを参照し、そのデータが更新されているとLINEに通知を送る処理をGASで定期実行しています。
             </p>
           </div>
           <div class="connection-link">
