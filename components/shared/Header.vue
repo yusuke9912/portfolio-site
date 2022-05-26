@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header" v-bind:class="{ show: visible_header }" >
   <div class="container">
     <h1 class="header-logo">
       <router-link to="/">Yusuke Nakagawa's Portfolio</router-link>
@@ -34,11 +34,27 @@
 <script>
 export default {
   name: 'shared-header',
-  data() {
+  data: function (){
     return {
       flag: false,
+      visible_header: false,
     }
   },
+    mounted() {
+    window.addEventListener("scroll", this.calculateScrollY);
+    if (window.pageYOffset == 0) {
+      this.visible_header = false;
+    }
+  },
+  methods: {
+   calculateScrollY() {
+    this.scrollY = window.scrollY;
+    console.log(this.scrollY);
+    if (!this.visible_about) {
+      this.visible_header = window.scrollY > 20
+    }
+   }
+  }
 }
 </script>
 
@@ -51,16 +67,24 @@ export default {
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color: var(--main-color);
-  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.1);
+  background: rgba(0,0,0,0);
+  transition: .3s;
+}
+
+.header.show{
+  background: rgba(0,0,0,.7);
 }
 
 .header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 40px 40px;
   opacity:1;
+}
+
+.header.show .container{
+  padding: 15px 40px;
 }
 
 .header-logo {
