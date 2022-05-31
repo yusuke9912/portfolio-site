@@ -2,7 +2,7 @@
     <div class="wrapper">
 
       <!-- header -->
-      <shared-header></shared-header>
+      <!-- <shared-header></shared-header> -->
       <!-- /header -->
 
 <main class="content">
@@ -34,9 +34,6 @@
             <p>
               犬と猫を判別するモデルはAIメーカーで作成しました。GASからAIメーカーのAPIを呼び出した後、画像が犬か猫かの判別結果をLINEに送信するようにしました。
             </p>
-          </div>
-          <div class="connection-link">
-            <a href="https://lin.ee/eTmCXzP" target="_blank" rel="noopener">URL</a>
           </div>
           <div class="home-link">
             <router-link to="/#works">作品一覧へ戻る</router-link>

@@ -2,7 +2,7 @@
     <div class="wrapper">
 
       <!-- header -->
-      <shared-header></shared-header>
+      <!-- <shared-header></shared-header> -->
       <!-- /header -->
       <main class="content">
         <article class="article">
