@@ -80,6 +80,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 40px 40px;
+  transition: .3s;
   opacity:1;
 }
 

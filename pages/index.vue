@@ -44,12 +44,7 @@
           <!-- web application -->
           <h3>Web Application</h3>
           <div class="works-list">
-            <a
-              class="works-item"
-              v-bind:href="work.link"
-              v-for="work in web_works"
-              v-bind:key="work.name"
-            >
+            <a class="works-item" v-bind:href="work.link" v-for="work in web_works" v-bind:key="work.name">
               <div class="works-img">
                 <img v-bind:src="work.imgUrl" v-bind:alt="work.alt" />
               </div>
@@ -60,12 +55,7 @@
           <!-- native application -->
           <h3>Native Application</h3>
           <div class="works-list">
-            <a
-              class="works-item"
-              v-bind:href="work.link"
-              v-for="work in native_works"
-              v-bind:key="work.name"
-            >
+            <a class="works-item" v-bind:href="work.link" v-for="work in native_works" v-bind:key="work.name">
               <div class="works-img">
                 <img v-bind:src="work.imgUrl" v-bind:alt="work.alt" />
               </div>
@@ -76,17 +66,12 @@
           <!-- line bot -->
           <h3>LINE Bot</h3>
           <div class="works-list">
-            <router-link
-              class="works-item"
-              v-bind:to="work.link"
-              v-for="work in bot_works"
-              v-bind:key="work.name"
-            >
+            <a class="works-item" v-bind:href="work.link" v-for="work in bot_works" v-bind:key="work.name">
               <div class="works-img">
                 <img v-bind:src="work.imgUrl" v-bind:alt="work.alt" />
               </div>
               <p class="works-name">{{ work.name }}</p>
-            </router-link>
+            </a>
           </div>
         </div>
         <!-- /line bot -->
