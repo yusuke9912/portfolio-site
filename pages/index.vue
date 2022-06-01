@@ -224,13 +224,13 @@ export default {
           imgUrl: "/img/skill_icon/html5.svg",
           alt:"HTML5のアイコン",
           name: "HTML5",
-          text: "Webサイトの作成に使用しています。metaタグの記入や、ファビコンの設定も可能です。",
+          text: "Webアプリケーションの作成に使用しています。デザインカンプをもとにLPを作成した経験があり、SEO対策のためのmetaタグの記入やGoogleアナリティクスの導入も可能です。",
         },
         {
           imgUrl: "/img/skill_icon/css3.svg",
           alt:"CSS3のアイコン",
           name: "CSS3",
-          text: "Webサイトの作成に使用しています。レスポンシブデザインへの対応も可能です。",
+          text: "Webアプリケーションの作成に使用しています。デザインカンプをもとにしたCSSの実装の経験があり、アニメーションの実装やレスポンシブデザインへの対応も可能です。",
         },
         {
           imgUrl: "/img/skill_icon/javascript.svg",
