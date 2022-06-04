@@ -130,7 +130,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 85vh;
+  height: 100vh;
   text-align: center;
   background-image: url("/img/main.jpg");
   background-position: right top;
@@ -490,10 +490,6 @@ li:hover .tooltip {
   }
 
   /* レイアウト */
-  .wrapper {
-    padding-top: 57px;
-  }
-
   .section {
     padding: 60px 0;
   }
@@ -503,10 +499,6 @@ li:hover .tooltip {
   }
 
   /*  メインビジュアル */
-  .mv {
-    height: 75vh;
-  }
-
   .mv-container {
     padding: 0 20px;
   }
@@ -515,7 +507,7 @@ li:hover .tooltip {
     font-size: 30px;
   }
   .mv-subtitle {
-    font-size: 16px;
+    font-size: 22px;
     margin-bottom: 20px;
   }
 
