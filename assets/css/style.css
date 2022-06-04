@@ -49,12 +49,12 @@ img {
   transition: all 1s;
 }
 
-.fadeIn {
-  animation: fadeIn 2s;
+.fadeIn_up {
+  animation: fadeIn_up 2s;
   opacity: 1;
 }
 
-@keyframes fadeIn {
+@keyframes fadeIn_up {
   0% {
     opacity: 0;
     transform: translateY(200px);
@@ -63,6 +63,42 @@ img {
   100% {
     opacity: 1;
     transform: translateY(0px);
+    transition-duration:.7s;
+  }
+}
+
+.fadeIn_left {
+  animation: fadeIn_left 2s;
+  opacity: 1;
+}
+
+@keyframes fadeIn_left {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition-duration:.7s;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+    transition-duration:.7s;
+  }
+}
+
+.fadeIn_right {
+  animation: fadeIn_right 2s;
+  opacity: 1;
+}
+
+@keyframes fadeIn_right {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+    transition-duration:.7s;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
     transition-duration:.7s;
   }
 }
@@ -111,7 +147,7 @@ img {
   line-height: 1.2;
   margin-bottom: 5px;
   letter-spacing: 0.1em;
-  animation: fadeIn 2s;
+  animation: fadeIn_up 2s;
 }
 .mv-subtitle {
   font-size: 40px;
@@ -119,7 +155,7 @@ img {
   line-height: 1;
   margin-bottom: 40px;
   letter-spacing: 0.08em;
-  animation: fadeIn 2s;
+  animation: fadeIn_up 2s;
 }
 
 .mv-text {

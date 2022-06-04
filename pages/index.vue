@@ -16,7 +16,7 @@
 
       <!-- about -->
       <section class="about section" id="about">
-        <div class="container" :class="{fadeIn:visible_about}">
+        <div class="container" :class="{fadeIn_left:visible_about}">
           <h2 class="title">About</h2>
           <div class="profile">
             <p class="profile-img">
@@ -39,7 +39,7 @@
 
       <!-- works -->
       <section class="works section" id="works">
-        <div class="container" :class="{fadeIn:visible_works }">
+        <div class="container" :class="{fadeIn_up:visible_works }">
           <h2 class="title">Works</h2>
           <!-- web application -->
           <h3>Web Application</h3>
@@ -80,7 +80,7 @@
 
       <!-- skill -->
       <section class="skill section" id="skill">
-        <div class="container" :class="{fadeIn: visible_skills }">
+        <div class="container" :class="{fadeIn_up: visible_skills }">
           <h2 class="title">Skill</h2>
           <div class="skill-list">
             <div
@@ -105,10 +105,10 @@
 
       <!-- contact -->
       <section class="contact section" id="contact">
-        <div class="container" :class="{fadeIn: visible_contact }">
+        <div class="container" :class="{fadeIn_right: visible_contact }">
           <h2 class="title">Contact</h2>
           <p class="lead">
-            お問い合わせは、<br class="sp-only" />メールにてお願いいたします。
+            お問い合わせは、<br class="sp-only" />下記SNS及びメールからお願いいたします。
           </p>
           <div class="contact-list">
             <a
