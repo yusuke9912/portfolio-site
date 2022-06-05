@@ -108,7 +108,7 @@
         <div class="container" :class="{fadeIn_up: visible_contact }">
           <h2 class="title">Contact</h2>
           <p class="lead">
-            お問い合わせは、<br class="sp-only" />下記SNSまたはメールからお願いいたします。
+            お問い合わせは、<br class="sp-only" />SNSまたはメールからお願いいたします。
           </p>
           <div class="contact-list">
             <a
