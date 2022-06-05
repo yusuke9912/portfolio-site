@@ -347,11 +347,17 @@ li:hover .tooltip {
 }
 
 .contact-item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .contact-text {
   margin-top: 10px;
+}
+
+.contact-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mail-adress{

@@ -108,7 +108,7 @@
         <div class="container" :class="{fadeIn_up: visible_contact }">
           <h2 class="title">Contact</h2>
           <p class="lead">
-            お問い合わせは、<br class="sp-only" />下記SNS及びメールからお願いいたします。
+            お問い合わせは、<br class="sp-only" />下記SNSまたはメールからお願いいたします。
           </p>
           <div class="contact-list">
             <a
@@ -127,7 +127,9 @@
             >
               <img src="@/assets/img/github.svg" alt="githubのアイコン" />
             </a>
-            <p class="mail-adress">nakagawa.1202.n@gmail.com</p>
+            <a href="mailto:nakagawa.1202.y@gmail.com">
+              <img src="@/assets/img/mail.svg" alt="メールのアイコン" />
+            </a>
           </div>
         </div>
       </section>
