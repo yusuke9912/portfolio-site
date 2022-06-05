@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        <div class="copyright">&copy;2021 Yusuke Nakagawa</div>
+        <div class="copyright">&copy;2022 Yusuke Nakagawa</div>
     </footer>
 </template>
 
