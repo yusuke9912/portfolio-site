@@ -2,6 +2,17 @@
   --main-color: #505050;
 }
 
+::selection {
+  color            : #ffffff;      /* 選択時の文字色 */
+  background-color : var(--main-color);      /* 選択時の背景色 */
+}
+
+/* Firefox */
+::-moz-selection {
+  color            : #ffffff;      /* 選択時の文字色 */
+  background-color : var(--main-color);      /* 選択時の背景色 */
+}
+
 body {
   font-family:   "Osaka","MS PGothic", Arial, sans-serif sans-serif;
   font-size: 15px;
