@@ -13,7 +13,10 @@
           <div class="article-body">
             <p class="article-image">
               <carousel :per-page="1">
-                <slide><img src="@/assets/img/works/portfolio/portfolio.png" alt="サイトのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/portfolio/portfolio.png" alt="ポートフォリオサイトのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/portfolio/portfolio2.png" alt="ポートフォリオサイトのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/portfolio/portfolio3.png" alt="ポートフォリオサイトのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/portfolio/portfolio4.png" alt="ポートフォリオサイトのスクリーンショット"></slide>
               </carousel>
             </p>
             <p>
