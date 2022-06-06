@@ -10,13 +10,13 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '中川雄介のポートフォリオサイトです。' },
-      { hid: 'og:site_name', property: 'og:site_name', content: "Yusuke Nakagawa' Portfolio" },
+      { hid: 'description', name: 'description', content: '中川雄介のポートフォリオサイト' },
+      { hid: 'og:site_name', property: 'og:site_name', content: "Yusuke Nakagawa's Portfolio" },
       { hid: 'og:url', property: 'og:url', content: 'https://yusukesportfolio.web.app' },  //絶対パスで指定
       { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:image', property: 'og:image', content: 'https://test-yusukesportfolio.web.app/img/ogp.png' },  //絶対パスで指定
+      { hid: 'og:image', property: 'og:image', content: 'https://yusukesportfolio.web.app/img/ogp.png' },  //絶対パスで指定
       { hid: 'og:title', property: 'og:title', content: "Yusuke Nakagawa' Portfolio" },
-      { hid: 'og:description', property: 'og:description', content: '中川雄介のポートフォリオサイトです。' },
+      { hid: 'og:description', property: 'og:description', content: '中川雄介のポートフォリオサイト' },
       { name: 'twitter:card', content: 'summary_large_image' }
     ],
     link: [
