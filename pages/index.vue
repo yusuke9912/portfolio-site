@@ -276,6 +276,12 @@ export default {
           name: "AWS",
           text: "Webアプリのインフラの実装に使用しています。AWSを用いて、Webサーバーを立ち上げサイトを公開したことがあります。その際は独自ドメインを取得し、プロキシサーバの導入やSSL化なども行いました。",
         },
+        {
+          imgUrl: "/img/skill_icon/swift.svg",
+          alt:"AWSのアイコン",
+          name: "Swift",
+          text: "iOSアプリの開発に使用しています。YoutubeKitなどのライブラリの使用やFirebaseとの連携の経験があります。また実際にAppleに申請を出し、App Storeにアプリを公開したことがあります。",
+        },
       ],
     };
   },
