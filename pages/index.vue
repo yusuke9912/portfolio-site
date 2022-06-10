@@ -259,6 +259,12 @@ export default {
           text: "主にWebスクレイピングに使用しています。BeautifulSoupやSeleniumといったライブラリを使用して、twitterや情報処理技術者試験の過去問をスクレイピングしたことがあります。",
         },
         {
+          imgUrl: "/img/skill_icon/swift.svg",
+          alt:"Swiftのアイコン",
+          name: "Swift",
+          text: "iOSアプリの開発に使用しています。YoutubeKitなどのライブラリの使用やFirebaseとの連携の経験があります。また実際にAppleに申請を出し、App Storeにアプリを公開したことがあります。",
+        },
+        {
           imgUrl: "/img/skill_icon/wordpress.svg",
           alt:"WordPressのアイコン",
           name: "WordPress",
@@ -275,12 +281,6 @@ export default {
           alt:"AWSのアイコン",
           name: "AWS",
           text: "Webアプリのインフラの実装に使用しています。AWSを用いて、Webサーバーを立ち上げサイトを公開したことがあります。その際は独自ドメインを取得し、プロキシサーバの導入やSSL化なども行いました。",
-        },
-        {
-          imgUrl: "/img/skill_icon/swift.svg",
-          alt:"AWSのアイコン",
-          name: "Swift",
-          text: "iOSアプリの開発に使用しています。YoutubeKitなどのライブラリの使用やFirebaseとの連携の経験があります。また実際にAppleに申請を出し、App Storeにアプリを公開したことがあります。",
         },
       ],
     };
