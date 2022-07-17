@@ -235,7 +235,7 @@ export default {
           text: "Webアプリケーションの作成に使用しています。デザインカンプをもとにLPを作成した経験があり、SEO対策のためのmetaタグの記入やGoogleアナリティクスの導入も可能です。",
         },
         {
-          imgUrl: require("@/assets/img/skill_icon/css3-2.svg"),
+          imgUrl: require("@/assets/img/skill_icon/css3.svg"),
           alt:"CSS3のアイコン",
           name: "CSS3",
           text: "Webアプリケーションの作成に使用しています。デザインカンプをもとにしたCSSの実装の経験があり、アニメーションの実装やレスポンシブデザインへの対応も可能です。",
