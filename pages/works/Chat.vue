@@ -1,6 +1,5 @@
 <template>
     <div class="wrapper">
-
       <!-- header -->
       <!-- <shared-header></shared-header> -->
       <!-- /header -->
@@ -9,18 +8,18 @@
 
       <article class="article">
         <div class="article-container">
-          <h2 class="article-title">チャットツール</h2>
+          <h2 class="article-title">らくらくチャット</h2>
           <div class="article-body">
             <p class="article-image">
               <carousel :per-page="1">
-                <slide><img src="@/assets/img/works/chat/chat.png" alt="チャットツールのスクリーンショット"></slide>
-                <slide><img src="@/assets/img/works/chat/chat2.png" alt="チャットツールのスクリーンショット"></slide>
-                <slide><img src="@/assets/img/works/chat/chat3.png" alt="チャットツールのスクリーンショット"></slide>
-                <slide><img src="@/assets/img/works/chat/chat4.png" alt="チャットツールのスクリーンショット"></slide>
-                <slide><img src="@/assets/img/works/chat/chat5.png" alt="チャットツールのスクリーンショット"></slide>
-                <slide><img src="@/assets/img/works/chat/chat6.png" alt="チャットツールのスクリーンショット"></slide>
-                <slide><img src="@/assets/img/works/chat/chat7.png" alt="チャットツールのスクリーンショット"></slide>
-                <slide><img src="@/assets/img/works/chat/chat8.png" alt="チャットツールのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/chat/chat.png" alt="らくらくチャットのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/chat/chat2.png" alt="らくらくチャットのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/chat/chat3.png" alt="らくらくチャットのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/chat/chat4.png" alt="らくらくチャットのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/chat/chat5.png" alt="らくらくチャットのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/chat/chat6.png" alt="らくらくチャットのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/chat/chat7.png" alt="らくらくチャットのスクリーンショット"></slide>
+                <slide><img src="@/assets/img/works/chat/chat8.png" alt="らくらくチャットのスクリーンショット"></slide>
               </carousel>
             </p>
             <p>

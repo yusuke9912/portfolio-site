@@ -165,8 +165,8 @@ export default {
         {
           link: "/works/chat",
           imgUrl: "img/works/chat/chat.png",
-          alt:"チャットツールのサムネイル",
-          name: "チャットツール",
+          alt:"らくらくチャットのサムネイル",
+          name: "らくらくチャット",
         },
         {
           link: "/works/typing",
