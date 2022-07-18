@@ -250,7 +250,7 @@ export default {
           imgUrl: require("@/assets/img/skill_icon/php.svg"),
           alt:"PHPのアイコン",
           name: "PHP",
-          text: "Webアプリのバックエンドの実装に使用しています。PHPを使って過去問演習アプリやコロナに関するニュースをスクレイピングするアプリを作ったことがあります。",
+          text: "Webアプリのバックエンドの実装に使用しています。PHPを使って過去問演習アプリやコロナに関するニュースをスクレイピングするアプリを作ったことがあります。また、フレームワークであるLaravelでのAPIの実装経験があります。",
         },
         {
           imgUrl: require("@/assets/img/skill_icon/ruby.svg"),
@@ -286,7 +286,7 @@ export default {
           imgUrl: require("@/assets/img/skill_icon/aws.svg"),
           alt:"AWSのアイコン",
           name: "AWS",
-          text: "Webアプリのインフラの実装に使用しています。AWSを用いて、Webサーバーを立ち上げサイトを公開したことがあります。その際は独自ドメインを取得し、プロキシサーバの導入やSSL化なども行いました。",
+          text: "Webアプリのインフラの実装に使用しています。AWSを用いて、Webサーバーを立ち上げサイトを公開したことがあります。その際は独自ドメインを取得し、ロードバランサーの導入やSSL化なども行いました。",
         },
       ],
     };
