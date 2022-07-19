@@ -288,6 +288,12 @@ export default {
           name: "AWS",
           text: "Webアプリのインフラの実装に使用しています。AWSを用いて、Webサーバーを立ち上げサイトを公開したことがあります。その際は独自ドメインを取得し、ロードバランサーの導入やSSL化なども行いました。",
         },
+        {
+          imgUrl: require("@/assets/img/skill_icon/mysql.svg"),
+          alt:"MySQLのアイコン",
+          name: "MySQL",
+          text: "Webアプリケーション開発時のデータベースに使用しています。LaravelやRuby on Rails での開発時にデータベースとしてMySQLを選択しました。",
+        },
       ],
     };
   },
