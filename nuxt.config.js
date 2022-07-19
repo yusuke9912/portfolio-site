@@ -43,6 +43,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/google-gtag',
+    'bootstrap-vue/nuxt',
   ],
   'google-gtag': {
     id: 'G-3DT09QMKD8',
