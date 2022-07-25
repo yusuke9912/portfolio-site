@@ -17,12 +17,14 @@
       <!-- about -->
       <section class="about section" id="about">
         <div class="container" :class="{fadeIn_left:visible_about}">
-          <h2 class="title">About</h2>
-          <div class="profile">
-            <p class="profile-img">
-              <img src="@/assets/img/profile.jpg" alt="プロフィール画像" />
-            </p>
-            <div class="profile-body">
+          <h2 class="text-center">About</h2>
+          <div class="row justify-content-center">
+            <div class="col-8">
+              <div class="row justify-content-center">
+                <div class="col-lg-3 py-3 align-self-center">
+                  <img class="rounded-circle text-center" src="@/assets/img/profile.jpg" alt="プロフィール画像" />
+                </div>
+                <div class="col-lg-9">
               <p>
                 はじめまして。九州大学工学部土木工学科4年の中川雄介と申します。
               </p>
@@ -32,6 +34,8 @@
               </p>
               <p>自分や世の中にあるアイデアを形にすることができる、多くの技術の引き出しを持ったエンジニアになれるよう努力し続けます。</p>
             </div>
+          </div>
+        </div>
           </div>
         </div>
       </section>
