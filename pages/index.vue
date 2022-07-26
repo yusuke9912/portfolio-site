@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="wrapper">
     <!-- header -->
     <shared-header></shared-header>
     <!-- /header -->
 
     <main class="content">
       <!-- mv -->
-      <div class="mv text-white d-flex justify-content-center align-items-center text-center">
+      <div class="mv">
         <div class="mv-container">
           <p class="mv-title">Yusuke Nakagawa's Portfolio</p>
           <p class="mv-subtitle">Web Engineer</p>
@@ -17,24 +17,20 @@
       <!-- about -->
       <section class="about section" id="about">
         <div class="container" :class="{fadeIn_left:visible_about}">
-          <h2 class="text-center">About</h2>
-          <div class="row justify-content-center">
-            <div class="col-8">
-              <div class="row justify-content-center">
-                <div class="col-lg-3 py-3 align-self-center">
-                  <img class="rounded-circle text-center" src="@/assets/img/profile.jpg" alt="プロフィール画像" />
-                </div>
-                <div class="col-lg-9">
-                  <p>
-                    はじめまして。九州大学工学部土木工学科4年の中川雄介と申します。
-                  </p>
-                  <p>
-                    大学1年生の夏にプログラミングを始め、これまでエンジニアインターンやプライベートでの開発を通してスキルを磨いてきました。<br />
-                    そうした中で自分のプログラミングへの適性を感じため、将来はITの道に進みたいと考えています。
-                  </p>
-                  <p>自分や世の中にあるアイデアを形にすることができる、多くの技術の引き出しを持ったエンジニアになれるよう努力し続けます。</p>
-                </div>
-              </div>
+          <h2 class="title">About</h2>
+          <div class="profile">
+            <p class="profile-img">
+              <img src="@/assets/img/profile.jpg" alt="プロフィール画像" />
+            </p>
+            <div class="profile-body">
+              <p>
+                はじめまして。九州大学工学部土木工学科4年の中川雄介と申します。
+              </p>
+              <p>
+                大学1年生の夏にプログラミングを始め、これまでエンジニアインターンやプライベートでの開発を通してスキルを磨いてきました。<br />
+                そうした中で自分のプログラミングへの適性を感じため、将来はITの道に進みたいと考えています。
+              </p>
+              <p>自分や世の中にあるアイデアを形にすることができる、多くの技術の引き出しを持ったエンジニアになれるよう努力し続けます。</p>
             </div>
           </div>
         </div>
@@ -43,55 +39,69 @@
 
       <!-- works -->
       <section class="works section" id="works">
-        <div class="container fadeIn" :class="{fadeIn_right:visible_works }">
-          <h2 class="h2">Works</h2>
-          <h3 class="h3">Web Application</h3>
-          <div class="row">
-            <div class="col-md-4 mb-4" v-for="work in web_works" v-bind:key="work.name">
-              <a v-bind:href="work.link">
-                <img class="rounded shadow-sm mb-3" v-bind:src="work.imgUrl" v-bind:alt="work.alt" />
-                <p class="text-dark text-center">{{ work.name }}</p>
-              </a>
+        <div class="container" :class="{fadeIn_right:visible_works }">
+          <h2 class="title">Works</h2>
+          <!-- web application -->
+          <h3>Web Application</h3>
+          <div class="works-list">
+            <div class="works-item" v-for="work in web_works" :key="work.name">
+            <a :href="work.link">
+              <div class="works-img">
+                <img :src="work.imgUrl" :alt="work.alt" />
+              </div>
+            </a>
+            <p class="works-name">{{ work.name }}</p>
             </div>
           </div>
-          <h3 class="h3">Native Application</h3>
-          <div class="row">
-            <div class="col-md-4 mb-4" v-for="work in native_works" v-bind:key="work.name">
-              <a v-bind:href="work.link">
-                <img class="rounded shadow-sm mb-3" v-bind:src="work.imgUrl" v-bind:alt="work.alt" />
-                <p class="text-dark text-center">{{ work.name }}</p>
-              </a>
+          <!-- /web application -->
+          <!-- native application -->
+          <h3>Native Application</h3>
+          <div class="works-list">
+            <div class="works-item" v-for="work in native_works" :key="work.name">
+            <a :href="work.link">
+              <div class="works-img">
+                <img :src="work.imgUrl" :alt="work.alt" />
+              </div>
+            </a>
+            <p class="works-name">{{ work.name }}</p>
             </div>
           </div>
-          <h3 class="h3">LINE bot</h3>
-          <div class="row">
-            <div class="col-md-4 mb-4" v-for="work in bot_works" v-bind:key="work.name">
-              <a v-bind:href="work.link">
-                <img class="rounded shadow-sm mb-3" v-bind:src="work.imgUrl" v-bind:alt="work.alt" />
-                <p class="text-dark text-center">{{ work.name }}</p>
-              </a>
+          <!-- /native application -->
+          <!-- line bot -->
+          <h3>LINE Bot</h3>
+          <div class="works-list">
+            <div class="works-item" v-for="work in bot_works" :key="work.name">
+            <a :href="work.link">
+              <div class="works-img">
+                <img :src="work.imgUrl" :alt="work.alt" />
+              </div>
+            </a>
+            <p class="works-name">{{ work.name }}</p>
             </div>
           </div>
         </div>
+        <!-- /line bot -->
       </section>
       <!-- /works -->
 
       <!-- skill -->
       <section class="skill section" id="skill">
         <div class="container" :class="{fadeIn_left: visible_skills }">
-          <h2 class="h2">Skill</h2>
-          <div class="row">
-            <div class="col-md-4 mb-4" v-for="skill in skills" v-bind:key="skill.name">
-              <div class="card">
-                <div class="card-body">
-                  <div style="height:300px">
-                  <div class="h-25">
-                    <img class="h-100" v-bind:src="skill.imgUrl" v-bind:alt="skill.alt" />
-                  </div>
-                    <h3 class="card-title">{{ skill.name }}</h3>
-                    <p class="card-text">{{ skill.text }}</p>
-                  </div>
-                </div>
+          <h2 class="title">Skill</h2>
+          <div class="skill-list">
+            <div
+              class="skill-item"
+              v-for="skill in skills"
+              :key="skill.name"
+            >
+              <p class="skill-img">
+                <img :src="skill.imgUrl" :alt="skill.alt" />
+              </p>
+              <div class="skill-body">
+                <h3 class="skill-name">{{ skill.name }}</h3>
+                <p class="skill-text">
+                  {{ skill.text }}
+                </p>
               </div>
             </div>
           </div>
@@ -100,17 +110,27 @@
       <!-- /skill -->
 
       <!-- contact -->
-      <section class="contact section text-center" id="contact">
+      <section class="contact section" id="contact">
         <div class="container" :class="{fadeIn_up: visible_contact }">
-          <h2>Contact</h2>
-          <p>
+          <h2 class="title">Contact</h2>
+          <p class="lead">
             お問い合わせは、<br class="sp-only" />SNSまたはメールからお願いいたします。
           </p>
-          <div>
-            <a href="https://twitter.com/uke_9912" target="_blank" rel="noopener">
+          <div class="contact-list">
+            <a
+              class="contact-item"
+              href="https://twitter.com/uke_9912"
+              target="_blank"
+              rel="noopener"
+            >
               <img src="@/assets/img/twitter.svg" alt="twitterのアイコン" />
             </a>
-            <a href="https://github.com/yusuke9912" target="_blank" rel="noopener">
+            <a
+              class="contact-item"
+              href="https://github.com/yusuke9912"
+              target="_blank"
+              rel="noopener"
+            >
               <img src="@/assets/img/github.svg" alt="githubのアイコン" />
             </a>
             <a href="mailto:nakagawa.1202.y@gmail.com">
@@ -319,34 +339,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.jumbotron {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-bottom: 0;
-  background-color: #fff;
-}
-@media (min-width: 768px) {
-  .jumbotron {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-}
-
-.jumbotron p:last-child {
-  margin-bottom: 0;
-}
-
-.jumbotron h1 {
-  font-weight: 300;
-}
-
-.jumbotron .container {
-  max-width: 40rem;
-}
-
-.card{
-  border-radius: 0.5rem;
-}
-</style>
