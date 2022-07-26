@@ -104,6 +104,7 @@ export default {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  margin-bottom: 0;
 }
 
 .gnav-item:not(:last-child) {

@@ -18,7 +18,7 @@ export default {
 }
 
 .copyright {
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
   color: #eee;
 }
