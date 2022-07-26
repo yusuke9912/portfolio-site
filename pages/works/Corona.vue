@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import sharedWork from "../../components/shared/Work.vue"
+import sharedWork from "@/components/shared/Work"
 
 export default {
    data: function () {

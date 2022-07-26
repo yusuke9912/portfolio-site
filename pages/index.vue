@@ -150,8 +150,8 @@
 
 
 <script>
-import sharedHeader from "../components/shared/Header.vue";
-import sharedFooter from "../components/shared/Footer.vue";
+import sharedHeader from "@/components/shared/Header";
+import sharedFooter from "@/components/shared/Footer";
 
 export default {
   name: "home",
