@@ -1,76 +1,57 @@
 <template>
-    <div class="wrapper">
-
-      <!-- header -->
-      <!-- <shared-header></shared-header> -->
-      <!-- /header -->
-      <main class="content">
-        <article class="article">
-          <div class="article-container">
-            <h2 class="article-title">
-              コロナウイルスに関するニュースをまとめたサイト
-            </h2>
-            <div class="article-body">
-              <p class="article-image">
-                <carousel :per-page="1">
-                  <slide><img src="@/assets/img/works/news/news.png" alt="サイトのスクリーンショット"></slide>
-                </carousel>
-              </p>
-              <p>
-                コロナウイルスに関する情報を効率よく集めるため、コロナウイルスに関する記事をまとめたサイトを作成しました。
-              </p>
-              <h3>使用言語/ツール</h3>
-            <ul class="skill-img">
-              <li><img src="@/assets/img/skill_icon/html5.svg" alt="HTML5のアイコン"><span class="tooltip">HTML5</span></li>
-              <li><img src="@/assets/img/skill_icon/css3.svg" alt="CSS3のアイコン"><span class="tooltip">CSS3</span></li>
-              <li><img src="@/assets/img/skill_icon/javascript.svg" alt="JavaScriptのアイコン"><span class="tooltip">JavaScript</span></li>
-              <li><img src="@/assets/img/skill_icon/php.svg" alt="PHPのアイコン"><span class="tooltip">PHP</span></li>
-              <li><img src="@/assets/img/skill_icon/heroku.svg" alt="Herokuのアイコン"><span class="tooltip">Heroku</span></li>
-            </ul>
-              <h3>担当</h3>
-              <p>デザイン・コーディング</p>
-              <h3>デザインについて</h3>
-              <p>
-                スマホ画面ではヘッダーがハンバーガーメニューになるようにしました。
-              </p>
-              <h3>コーディングについて</h3>
-              <p>
-                phpQueryというPHPのライブラリを用いて<a href="https://news.yahoo.co.jp/" target="_blank" rel="noopener">Yahoo!ニュース</a>から「コロナ」「マスク」「感染」というワードをタイトルに含む記事をスクレピングしました。
-              </p>
-            </div>
-            <div class="connection-link">
-              <a href="https://news9912.herokuapp.com/" target="_blank" rel="noopener">URL</a>
-              <a href="https://github.com/yusuke9912/news" target="_blank" rel="noopener">GitHub</a>
-            </div>
-            <div class="home-link">
-              <router-link to="/#works">作品一覧へ戻る</router-link>
-            </div>
-          </div>
-        </article>
-      </main>
-
-
-      <!-- footer -->
-      <shared-footer></shared-footer>
-      <!-- /footer -->
+    <div>
+      <shared-work 
+        :title="title"
+        :description="description"
+        :design="design"
+        :coding="coding"
+        :screenshots="screenshots"
+        :skills="skills"
+      ></shared-work>
     </div>
 </template>
 
-
 <script>
-import sharedHeader from "../../components/shared/Header.vue"
-import sharedFooter from "../../components/shared/Footer.vue"
-import Carousel from 'vue-carousel/src/Carousel.vue'
-import Slide from 'vue-carousel/src/Slide.vue'
+import sharedWork from "../../components/shared/Work.vue"
 
 export default {
-  name: 'news',
+   data: function () {
+    return {
+      title:"コロナウイルスに関するニュースをまとめたサイト",
+      description:"コロナウイルスに関する情報を効率よく集めるため、コロナウイルスに関する記事をまとめたサイトを作成しました。",
+      design:"スマホ画面ではヘッダーがハンバーガーメニューになるようにしました。",
+      coding:"phpQueryというPHPのライブラリを用いてYahoo!ニュースから「コロナ」「マスク」「感染」というワードをタイトルに含む記事をスクレピングしました。",
+      screenshots: [
+        {
+          imgUrl: require("@/assets/img/works/news/news.png"),
+        },
+      ],
+      skills:[
+        {
+          name: "HTML5",
+          imgUrl:require("@/assets/img/skill_icon/html5.svg"),
+        },
+        {
+          name: "CSS3",
+          imgUrl:require("@/assets/img/skill_icon/css3.svg"),
+        },        
+        {
+          name: "JavaScript",
+          imgUrl:require("@/assets/img/skill_icon/javascript.svg"),
+        },  
+        {
+          name: "PHP",
+          imgUrl:require("@/assets/img/skill_icon/php.svg"),
+        },  
+        {
+          name: "Heroku",
+          imgUrl:require("@/assets/img/skill_icon/heroku.svg"),
+        },  
+      ]
+    };
+   },
   components: {
-    sharedHeader,
-    sharedFooter,
-    Carousel,
-    Slide
-    
+    sharedWork,
   }
 }
 </script>
