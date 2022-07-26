@@ -1,5 +1,5 @@
 <template>
-  <header class="header" v-bind:class="{ show: visible_header }" >
+  <header class="header" :class="{ show: visible_header }" >
   <div class="container">
     <h1 class="header-logo">
       <router-link to="/">Yusuke Nakagawa's Portfolio</router-link>
