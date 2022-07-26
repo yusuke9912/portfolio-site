@@ -49,7 +49,6 @@ export default {
   methods: {
    calculateScrollY() {
     this.scrollY = window.scrollY;
-    console.log(this.scrollY);
     if (!this.visible_about) {
       this.visible_header = window.scrollY > 20
     }
