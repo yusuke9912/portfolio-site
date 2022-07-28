@@ -52,8 +52,10 @@
                     <h3>コーディングについて</h3>
                     <p v-html="coding"></p>
                 </div>
-                <div class="home-link">
+                <div class="work-links">
                     <router-link to="/#works">作品一覧へ戻る</router-link>
+                    <a :href="githubURL" target="_blank" rel="noopener" v-if="hasGithubURL">github.comで詳しく</a>
+                    <a :href="serviceURL" target="_blank" rel="noopener" v-if="hasServiceURL">実際に触ってみる</a>
                 </div>
                 </div>
             </article>
@@ -78,7 +80,7 @@ export default {
     flag: false,
     };
   },
-  props: ["title", "description","design","coding","screenshots","skills"],
+  props: ["title", "description","design","coding","hasGithubURL","githubURL","hasServiceURL","serviceURL","screenshots","skills"],
     sharedFooter,
     Carousel,
     Slide,
@@ -169,25 +171,25 @@ export default {
   border-radius: 10px;
 }
 
-.connection-link{
-  text-align: center;
-}
-
-.connection-link a:nth-of-type(2){
-  margin-left: 40px;
-}
-
-
-.home-link{
+.work-links{
   text-align: center;
   margin-top: 100px;
 }
 
-.home-link a {
-  padding: 20px 40px;
+.work-links a{
+  padding: 15px 30px;
+  border-radius: 30px;
+}
+
+.work-links a:nth-of-type(1) {
   color: #fff;
   background-color: #4c4c4c;
-  border-radius: 30px;
+}
+
+.work-links a:nth-of-type(2),.work-links a:nth-of-type(3) {
+  color: #999999;
+  background-color: #fff;
+  border: 1px solid #999999;
 }
 
 @media screen and (max-width: 767px) {

@@ -5,6 +5,10 @@
         :description="description"
         :design="design"
         :coding="coding"
+        :hasGithubURL="hasGithubURL"
+        :githubURL="githubURL"
+        :hasServiceURL="hasServiceURL"
+        :serviceURL="serviceURL"
         :screenshots="screenshots"
         :skills="skills"
       ></shared-work>
@@ -21,6 +25,10 @@ export default {
       description:"株式会社SICでのインターン中に作成しました。インターンの日報を共有するツールとして利用してもらいました。",
       design:"LINEをモデルとしてチャットの画面をデザインしました。",
       coding:"ユーザー認証、画像データなどの保管場所及びデータベースにFirebaseを利用しました。Firebaseが提供するリアルタイムDBであるCloud Firestoreを利用することによってリアルタイムにメッセージが反映されるチャットを実現しました。",
+      hasGithubURL:false,
+      githubURL: "",
+      hasServiceURL:false,
+      serviceURL: "",
       screenshots: [
         {
           imgUrl: require("@/assets/img/works/chat/chat.png"),

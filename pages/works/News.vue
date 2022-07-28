@@ -5,6 +5,10 @@
         :description="description"
         :design="design"
         :coding="coding"
+        :hasGithubURL="hasGithubURL"
+        :githubURL="githubURL"
+        :hasServiceURL="hasServiceURL"
+        :serviceURL="serviceURL"
         :screenshots="screenshots"
         :skills="skills"
       ></shared-work>
@@ -21,6 +25,10 @@ export default {
       description:"コロナウイルスに関する情報を効率よく集めるため、コロナウイルスに関する記事をまとめたサイトを作成しました。",
       design:"スマホ画面ではヘッダーがハンバーガーメニューになるようにしました。",
       coding:"phpQueryというPHPのライブラリを用いて<a href='https://news.yahoo.co.jp/' target='_blank' rel='noopener'>Yahoo!ニュース</a>から「コロナ」「マスク」「感染」というワードをタイトルに含む記事をスクレピングしました。",
+      hasGithubURL:true,
+      githubURL: "https://github.com/yusuke9912/news",
+      hasServiceURL:true,
+      serviceURL: "https://news9912.herokuapp.com/",
       screenshots: [
         {
           imgUrl: require("@/assets/img/works/news/news.png"),

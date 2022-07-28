@@ -5,6 +5,10 @@
         :description="description"
         :design="design"
         :coding="coding"
+        :hasGithubURL="hasGithubURL"
+        :githubURL="githubURL"
+        :hasServiceURL="hasServiceURL"
+        :serviceURL="serviceURL"
         :screenshots="screenshots"
         :skills="skills"
       ></shared-work>
@@ -21,6 +25,10 @@ export default {
       description:"自分がこれまで作ってきた作品を紹介するために作成しました。",
       design:"HTMLテンプレートのデザインを参考にして作成しました。シンプルなデザインを心掛けました。",
       coding:"フレームワークにVueを使用することにより、保守性の向上とサイトのSPA化を行いました。また、ハンバーガーメニューやスライドショー、スクロール時のアニメーションなどの画面の動きの実装も行いました。",
+      hasGithubURL:true,
+      githubURL: "https://github.com/yusuke9912/portfolio-site",
+      hasServiceURL:true,
+      serviceURL: "https://yusukesportfolio.web.app",
       screenshots: [
         {
           imgUrl: require("@/assets/img/works/portfolio/portfolio.png"),

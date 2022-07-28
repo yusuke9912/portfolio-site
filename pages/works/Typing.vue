@@ -5,6 +5,10 @@
         :description="description"
         :design="design"
         :coding="coding"
+        :hasGithubURL="hasGithubURL"
+        :githubURL="githubURL"
+        :hasServiceURL="hasServiceURL"
+        :serviceURL="serviceURL"
         :screenshots="screenshots"
         :skills="skills"
       ></shared-work>
@@ -21,6 +25,10 @@ export default {
       description:"寿司打というタイピングゲームにハマっていた時、自分で一から同じものを作ってみたいと思い立ったため作成しました。家族や知り合いにも遊んでもらい、ランキングでスコアを競いました。",
       design:"残り3秒を切るとタイマーが赤くなるようにしたのがこだわりポイントです。",
       coding:"バックエンドにRuby on Railsを利用しました。ランキング機能の実装において、ユーザーごとの自己ベストを比較する処理を実装するのが大変でした。",
+      hasGithubURL:true,
+      githubURL: "https://github.com/yusuke9912/typing",
+      hasServiceURL:true,
+      serviceURL: "https://type9912.herokuapp.com/",
       screenshots: [
         {
           imgUrl: require("@/assets/img/works/typing/typing.png"),
