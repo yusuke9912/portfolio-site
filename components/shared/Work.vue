@@ -58,10 +58,6 @@
                     {{ coding }}
                     </p>
                 </div>
-                <div class="connection-link">
-                    <a href="https://job.yusuke-engineer.com" target="_blank" rel="noopener">サイトを開く</a>
-                    <a href="https://github.com/yusuke9912/hack-u-nho" target="_blank" rel="noopener">GitHub</a>
-                </div>
                 <div class="home-link">
                     <router-link to="/#works">作品一覧へ戻る</router-link>
                 </div>
@@ -77,9 +73,9 @@
 
 
 <script>
-import sharedFooter from "../../components/shared/Footer.vue"
-import Carousel from 'vue-carousel/src/Carousel.vue'
-import Slide from 'vue-carousel/src/Slide.vue'
+import sharedFooter from "@/components/shared/Footer"
+import Carousel from "vue-carousel/src/Carousel"
+import Slide from "vue-carousel/src/Slide"
 
 export default {
   name: "shared-work",
@@ -96,6 +92,9 @@ export default {
 </script>
 
 <style>
+/*--------------------------------
+ 下層：Worksページ
+---------------------------------*/
 .work-header {
   position: fixed;
   top: 0;
@@ -112,9 +111,115 @@ export default {
   opacity:1;
 }
 
+.article {
+  padding: 140px 0 80px;
+}
+
+.article-container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.article-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.article-body {
+  max-width: 720px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.article-body h3 {
+  position: relative;
+  font-size: 18px;
+  margin-bottom: 5px;
+  padding-left: 1em;
+}
+
+.article-body h3:not(:first-child) {
+  margin-top: 50px;
+}
+
+.article-body h3::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  content: "";
+  border-radius: 3px;
+  background-color: var(--main-color);
+}
+
+.article-body p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+
+.article-image{
+  margin: 0 auto 50px;
+}
+
+.article-image.small{
+  width: 500px;
+  max-width: 100%;
+}
+
+.VueCarousel-wrapper{
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.connection-link{
+  text-align: center;
+}
+
+.connection-link a:nth-of-type(2){
+  margin-left: 40px;
+}
+
+
+.home-link{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.home-link a {
+  padding: 20px 40px;
+  color: #fff;
+  background-color: #4c4c4c;
+  border-radius: 30px;
+}
+
 @media screen and (max-width: 767px) {
+  /* 下層ページ */
   .work-header .container {
     padding: 15px;
   }
+
+  .article {
+    padding: 50px 0;
+  }
+
+  .article-body h3 {
+    font-size: 16px;
+    padding-left: 0.8em;
+  }
+
+  .article-body h3:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .article-body p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
 }
 </style>
