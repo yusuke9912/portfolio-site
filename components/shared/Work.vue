@@ -42,21 +42,15 @@
                         </slide>
                     </carousel>
                     </p>
-                    <p>
-                    {{ description }}
-                    </p>
+                    <p v-html="description"></p>
                     <h3>使用言語/ツール</h3>
                     <ul class="skill-img">
                     <li><img v-for="skill in skills" :key="skill.name" :src="skill.imgUrl" :alt="skill.name + 'のアイコン'" v-b-tooltip.hover.bottom.v-info :title="skill.name"></li>
                     </ul>
                     <h3>デザインについて</h3>
-                    <p>
-                    {{ design }}
-                    </p>
+                    <p v-html="design"></p>
                     <h3>コーディングについて</h3>
-                    <p>
-                    {{ coding }}
-                    </p>
+                    <p v-html="coding"></p>
                 </div>
                 <div class="home-link">
                     <router-link to="/#works">作品一覧へ戻る</router-link>

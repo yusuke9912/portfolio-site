@@ -20,7 +20,7 @@ export default {
       title:"情報処理技術者試験の過去問演習サイト",
       description:"基本情報技術者試験を受ける際、自分で過去問演習アプリを作って勉強しようと思い立ったため作成しました。インターン先の社員さんがITパスポートの試験を受けるため、ITパスポートの過去問も解けるようにしました。",
       design:"電車の中でも過去問を演習できるように、スマホで使うことを前提にデザインを考えました。問題に正解した場合は画面に大きく丸印が出るようにしたのがこだわりポイントです。",
-      coding:"過去問はhttps://www.fe-siken.com/からpythonを使用してスクレイピングしました。間違えた問題を最後に復習できる機能をセッションを使って実装しました。",
+      coding:"過去問は<a href='https://www.fe-siken.com/' target='_blank' rel='noopener'>基本情報技術者試験ドットコム</a>からpythonを使用してスクレイピングしました。間違えた問題を最後に復習できる機能をセッションを使って実装しました。",
       screenshots: [
         {
           imgUrl: require("@/assets/img/works/questions/questions.png"),

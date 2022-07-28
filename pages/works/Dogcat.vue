@@ -18,7 +18,7 @@ export default {
    data: function () {
     return {
       title:"犬と猫を判別するLINEbot",
-      description:"送信された画像の中に写っているものが犬か猫かをAIを用いて判別するLINEbotです。AIメーカーという面白いサービスを見つけたので作成しました。",
+      description:"送信された画像の中に写っているものが犬か猫かをAIを用いて判別するLINEbotです。<a href='https://aimaker.io/' target='_blank' rel='noopener'>AIメーカー</a>という面白いサービスを見つけたので作成しました。",
       design:"Flex Message Simulatorというサービスを利用してデザインを作成しました。犬か猫かを判別するだけでなく、判別結果がどれほど確証できるのかをパーセント表示で表すようにしました。",
       coding:"犬と猫を判別するモデルはAIメーカーで作成しました。GASからAIメーカーのAPIを呼び出した後、画像が犬か猫かの判別結果をLINEに送信するようにしました。",
       screenshots: [

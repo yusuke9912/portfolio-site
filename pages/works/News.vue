@@ -20,7 +20,7 @@ export default {
       title:"コロナウイルスに関するニュースをまとめたサイト",
       description:"コロナウイルスに関する情報を効率よく集めるため、コロナウイルスに関する記事をまとめたサイトを作成しました。",
       design:"スマホ画面ではヘッダーがハンバーガーメニューになるようにしました。",
-      coding:"phpQueryというPHPのライブラリを用いてYahoo!ニュースから「コロナ」「マスク」「感染」というワードをタイトルに含む記事をスクレピングしました。",
+      coding:"phpQueryというPHPのライブラリを用いて<a href='https://news.yahoo.co.jp/' target='_blank' rel='noopener'>Yahoo!ニュース</a>から「コロナ」「マスク」「感染」というワードをタイトルに含む記事をスクレピングしました。",
       screenshots: [
         {
           imgUrl: require("@/assets/img/works/news/news.png"),

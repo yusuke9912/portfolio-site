@@ -18,7 +18,7 @@ export default {
    data: function () {
     return {
       title:"TODO管理ツール",
-      description:"業務でAngularを利用することになったため、Angularの勉強の一環として作成しました。",
+      description:"仕事でAngularを利用することになったため、Angularの勉強の一環として作成しました。",
       design:"余計な機能は付けずに、シンプルなデザインにしました。",
       coding:"ブラウザのローカルストレージにタスクを保存し、再読み込みしてもタスクが消えないようにしました。また他の人のフィードバックを元に、完了済みにしたタスクをすぐに削除するのではなく、ゴミ箱に入れるようにしました。",
       screenshots: [
