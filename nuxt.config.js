@@ -44,6 +44,7 @@ export default {
   modules: [
     '@nuxtjs/google-gtag',
     'bootstrap-vue/nuxt',
+    '@nuxtjs/fontawesome',
   ],
   'google-gtag': {
     id: 'G-3DT09QMKD8',
@@ -51,5 +52,23 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+
+  fontawesome: {
+    component: "fa",
+    imports: [
+      {
+        set: "@fortawesome/free-solid-svg-icons", // Solidアイコン
+        icons: ["faHome", "faCaretRight"],
+      },
+      {
+        set: "@fortawesome/free-brands-svg-icons", // Brandアイコン
+        icons: ["faTwitter"],
+      },
+      {
+        set: "@fortawesome/free-solid-svg-icons", // Brandアイコン
+        icons: ["faArrowUpRightFromSquare"],
+      },
+    ],
+  },
 }

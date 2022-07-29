@@ -27,10 +27,10 @@
                     <h3>コーディングについて</h3>
                     <p v-html="coding"></p>
                 </div>
-                <div class="work-links">
-                    <router-link to="/#works">作品一覧へ戻る</router-link>
-                    <a :href="githubURL" target="_blank" rel="noopener" v-if="hasGithubURL">github.comで詳しく</a>
-                    <a :href="serviceURL" target="_blank" rel="noopener" v-if="hasServiceURL">実際に触ってみる</a>
+                <div class="links">
+                    <router-link to="/#works" class="works-link">作品一覧へ</router-link>
+                    <a :href="githubURL" target="_blank" rel="noopener" class="github-link" v-if="hasGithubURL">github.comで詳しく<fa :icon="['fas', 'arrow-up-right-from-square']" class="external-link-icon" /></a>
+                    <a :href="serviceURL" target="_blank" rel="noopener" class="service-link" v-if="hasServiceURL">実際に触ってみる<fa :icon="['fas', 'arrow-up-right-from-square']" class="external-link-icon" /></a>
                 </div>
                 </div>
             </article>
@@ -154,26 +154,40 @@ h3::before {
   margin-right: 10px;
 }
 
-.work-links{
+.links{
   text-align: center;
   margin-top: 100px;
 }
 
-.work-links a{
+.links a{
   padding: 15px 30px;
   margin-bottom: 10px;
   border-radius: 30px;
+  transition:all 0.15s ease-in-out;
 }
 
-.work-links a:nth-of-type(1) {
+.links .works-link {
   color: #fff;
-  background-color: #4c4c4c;
+  background-color: var(--main-color);
 }
 
-.work-links a:nth-of-type(2),.work-links a:nth-of-type(3) {
-  color: #999999;
+.links .works-link:hover {
+  background-color: var(--main-color);
+}
+
+.links .github-link,.links .service-link {
+  color: #777;
   background-color: #fff;
-  border: 1px solid #999999;
+  border: 1px solid #777;
+}
+
+.links .github-link:hover,.links .service-link:hover {
+  background-color: #f5f5f5;
+}
+
+.external-link-icon{
+  margin-left: 5px;
+  font-size: 17px;
 }
 
 @media screen and (max-width: 767px) {
@@ -201,7 +215,7 @@ h3::before {
     margin-bottom: 20px;
   }
 
-  .work-links{
+  .links{
     display: flex;
     flex-direction: column-reverse;
   }
