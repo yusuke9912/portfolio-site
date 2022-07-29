@@ -43,8 +43,8 @@
           <h2 class="title">Works</h2>
           <!-- web application -->
           <h3>Web Application</h3>
-          <div class="works-list">
-            <div class="works-item" v-for="work in web_works" :key="work.name">
+          <div class="works-list row">
+            <div class="works-item col-lg-4 col-sm-6" v-for="work in web_works" :key="work.name">
             <a :href="work.link">
               <div class="works-img">
                 <img :src="work.imgUrl" :alt="work.alt" />
@@ -56,8 +56,8 @@
           <!-- /web application -->
           <!-- native application -->
           <h3>Native Application</h3>
-          <div class="works-list">
-            <div class="works-item" v-for="work in native_works" :key="work.name">
+          <div class="works-list row">
+            <div class="works-item col-lg-4 col-sm-6" v-for="work in native_works" :key="work.name">
             <a :href="work.link">
               <div class="works-img">
                 <img :src="work.imgUrl" :alt="work.alt" />
@@ -69,8 +69,8 @@
           <!-- /native application -->
           <!-- line bot -->
           <h3>LINE Bot</h3>
-          <div class="works-list">
-            <div class="works-item" v-for="work in bot_works" :key="work.name">
+          <div class="works-list row">
+            <div class="works-item col-lg-4 col-sm-6" v-for="work in bot_works" :key="work.name">
             <a :href="work.link">
               <div class="works-img">
                 <img :src="work.imgUrl" :alt="work.alt" />
@@ -88,12 +88,9 @@
       <section class="skill section" id="skill">
         <div class="container" :class="{fadeIn_left: visible_skills }">
           <h2 class="title">Skill</h2>
-          <div class="skill-list">
-            <div
-              class="skill-item"
-              v-for="skill in skills"
-              :key="skill.name"
-            >
+          <div class="skill-list row">
+            <div class="col-lg-4 col-sm-6" v-for="skill in skills" :key="skill.name"> 
+            <div class="skill-item">
               <p class="skill-img">
                 <img :src="skill.imgUrl" :alt="skill.alt" />
               </p>
@@ -104,6 +101,8 @@
                 </p>
               </div>
             </div>
+            </div>
+
           </div>
         </div>
       </section>
