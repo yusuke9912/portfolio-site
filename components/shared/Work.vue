@@ -19,7 +19,7 @@
                     <h3>使用言語/ツール</h3>
                     <ul class="used-skill-list">
                     <li v-for="skill in skills" :key="skill.name">
-                      <img :src="skill.imgUrl" :alt="skill.name + 'のアイコン'" v-b-tooltip.hover.bottom.v-info :title="skill.name">
+                      <img :src="skill.imgUrl" :alt="skill.name + 'のアイコン'" v-b-tooltip.hover.bottom.v-dark :title="skill.name">
                     </li>
                     </ul>
                     <h3>デザインについて</h3>
