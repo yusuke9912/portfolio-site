@@ -16,8 +16,10 @@
                     </p>
                     <p v-html="description"></p>
                     <h3>使用言語/ツール</h3>
-                    <ul class="skill-img">
-                    <li><img v-for="skill in skills" :key="skill.name" :src="skill.imgUrl" :alt="skill.name + 'のアイコン'" v-b-tooltip.hover.bottom.v-info :title="skill.name"></li>
+                    <ul class="used-skill-list">
+                    <li v-for="skill in skills" :key="skill.name">
+                      <img :src="skill.imgUrl" :alt="skill.name + 'のアイコン'" v-b-tooltip.hover.bottom.v-info :title="skill.name">
+                    </li>
                     </ul>
                     <h3>デザインについて</h3>
                     <p v-html="design"></p>
@@ -141,6 +143,17 @@ export default {
   border-radius: 10px;
 }
 
+.used-skill-list{
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.used-skill-list img{
+  width:60px;
+  margin-right: 10px;
+}
+
 .work-links{
   text-align: center;
   margin-top: 100px;
@@ -148,6 +161,7 @@ export default {
 
 .work-links a{
   padding: 15px 30px;
+  margin-bottom: 10px;
   border-radius: 30px;
 }
 
@@ -185,6 +199,11 @@ export default {
     font-size: 14px;
     line-height: 1.7;
     margin-bottom: 20px;
+  }
+
+  .work-links{
+    display: flex;
+    flex-direction: column-reverse;
   }
 
 }
