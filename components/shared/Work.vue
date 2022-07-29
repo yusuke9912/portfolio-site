@@ -1,34 +1,6 @@
 <template>
     <div>
-        <header class="work-header" >
-        <div class="container">
-            <h1 class="header-logo">
-            <router-link to="/">Yusuke Nakagawa's Portfolio</router-link>
-            </h1>
-            <nav class="gnav">
-            <ul class="gnav-list">
-                <li class="gnav-item"><a href="/#about">About</a></li>
-                <li class="gnav-item"><a href="/#works">Works</a></li>
-                <li class="gnav-item"><a href="/#skill">Skill</a></li>
-                <li class="gnav-item"><a href="/#contact">Contact</a></li>
-            </ul>
-            </nav>
-        <button class="menu-open" v-on:click="flag = !flag">
-            <span :class="{open:flag}"></span>
-            <span :class="{open:flag}"></span>
-            <span :class="{open:flag}"></span>
-        </button>
-        <nav class="menu-body" :class="{open:flag}">
-            <ul>
-                <li class="gnav-item"><a href="/#about" v-on:click="flag = false">About</a></li>
-                <li class="gnav-item"><a href="/#works" v-on:click="flag = false">Works</a></li>
-                <li class="gnav-item"><a href="/#skill" v-on:click="flag = false">Skill</a></li>
-                <li class="gnav-item"><a href="/#contact" v-on:click="flag = false">Contact</a></li>
-            </ul>
-            </nav>
-        <div class="menu-bg" :class="{open:flag}" v-on:click="flag = false"></div>
-        </div>
-        </header>
+        <shared-header></shared-header>
 
         <main class="content">
             <article class="article">
@@ -68,7 +40,8 @@
 </template>
 
 
-<script>
+<script scoped>
+import sharedHeader from "@/components/shared/Header"
 import sharedFooter from "@/components/shared/Footer"
 import Carousel from "vue-carousel/src/Carousel"
 import Slide from "vue-carousel/src/Slide"
@@ -81,17 +54,15 @@ export default {
     };
   },
   props: ["title", "description","design","coding","hasGithubURL","githubURL","hasServiceURL","serviceURL","screenshots","skills"],
+    sharedHeader,
     sharedFooter,
     Carousel,
     Slide,
   }
 </script>
 
-<style>
-/*--------------------------------
- 下層：Worksページ
----------------------------------*/
-.work-header {
+<style scoped>
+.header {
   position: fixed;
   top: 0;
   z-index: 1;
@@ -99,16 +70,15 @@ export default {
   background: rgba(0,0,0,.7);
 }
 
-.work-header .container {
+.header >>> .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 40px;
   opacity:1;
 }
-
 .article {
-  padding: 140px 0 80px;
+  padding: 140px 0 120px;
 }
 
 .article-container {
@@ -166,7 +136,7 @@ export default {
   max-width: 100%;
 }
 
-.VueCarousel-wrapper{
+.VueCarousel >>> .VueCarousel-wrapper{
   box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
@@ -194,12 +164,12 @@ export default {
 
 @media screen and (max-width: 767px) {
   /* 下層ページ */
-  .work-header .container {
+  .header >>> .container {
     padding: 15px;
   }
 
   .article {
-    padding: 50px 0;
+    padding: 100px 0 30px;
   }
 
   .article-body h3 {
