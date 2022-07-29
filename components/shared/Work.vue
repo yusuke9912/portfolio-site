@@ -14,6 +14,7 @@
                         </slide>
                     </carousel>
                     </p>
+                    <h3>開発の経緯</h3>
                     <p v-html="description"></p>
                     <h3>使用言語/ツール</h3>
                     <ul class="used-skill-list">
@@ -100,28 +101,27 @@ export default {
   margin-bottom: 80px;
 }
 
-.article-body h3 {
-  position: relative;
+h3 {
   font-size: 18px;
-  margin-bottom: 5px;
-  padding-left: 1em;
+  position: relative;
+  padding: 0.5em;
+  background: #a6d3c8;
+  color: white;
+  margin-bottom: 20px;
 }
-
-.article-body h3:not(:first-child) {
+h3:not(:first-child) {
   margin-top: 50px;
 }
 
-.article-body h3::before {
+h3::before {
   position: absolute;
-  top: 0;
+  content: '';
+  top: 100%;
   left: 0;
-  width: 4px;
-  height: 100%;
-  content: "";
-  border-radius: 3px;
-  background-color: var(--main-color);
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px rgb(149, 158, 155);
 }
-
 .article-body p {
   font-size: 15px;
   line-height: 1.8;
