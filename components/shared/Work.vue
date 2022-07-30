@@ -105,7 +105,7 @@ h3 {
   font-size: 18px;
   position: relative;
   padding: 0.5em;
-  background: #a6d3c8;
+  background: var(--accent-color);
   color: white;
   margin-bottom: 20px;
 }
