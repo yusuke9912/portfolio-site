@@ -35,14 +35,12 @@ img {
  テキスト選択時の背景色
 ---------------------------------*/
 ::selection {
-  color            : #ffffff;      /* 選択時の文字色 */
-  background-color : var(--accent-color);      /* 選択時の背景色 */
+  background-color : var(--accent-color);
 }
 
 /* Firefox */
 ::-moz-selection {
-  color            : #ffffff;      /* 選択時の文字色 */
-  background-color : var(--accent-color);      /* 選択時の背景色 */
+  background-color : var(--accent-color);
 }
 
 /*--------------------------------
