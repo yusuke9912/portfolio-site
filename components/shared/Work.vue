@@ -5,7 +5,7 @@
         <main class="content">
             <article class="article">
                 <div class="article-container">
-                <h2 class="article-title">{{ title }}</h2>
+                <h2 class="article-title" v-html="title"></h2>
                 <div class="article-body">
                     <p class="article-image small">
                     <carousel :per-page="1">
