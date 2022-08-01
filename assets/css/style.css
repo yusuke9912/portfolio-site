@@ -265,20 +265,51 @@ img {
   text-align: center;
 }
 
-.works-info {
-  font-size: 10px;
-  margin-top: 5px;
+.work-hover {
+  position: relative;
 }
-
-.show-works{
-  text-align: right;
+.work-hover figure {
+  overflow: hidden;
+  border-radius: 10px;
 }
-
-.show-works button{
-  padding: 20px 40px;
+.work-hover figure img {
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+.work-hover figure figcaption {
+  opacity: 0;
+  transition: 0.3s;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
   color: #fff;
-  background-color: #4c4c4c;
-  border-radius: 30px;
+  border: solid 1px #fff;
+  border-radius: 10px;
+  padding: 5px;
+}
+.work-hover figure figcaption .hover-text {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.work-hover figure figcaption .hover-text > p {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.work-hover:hover figure img {
+  filter: brightness(35%);
+  transform: scale(1.2);
+}
+.work-hover:hover figure figcaption {
+  opacity: 1;
 }
 /*--------------------------------
  Skill
