@@ -21,7 +21,7 @@ import sharedWork from "@/components/shared/Work"
 export default {
    data: function () {
     return {
-      title:"コロナウイルスに関するニュースをまとめたサイト",
+      title:"コロナウイルスの<br class='sp-only'>ニュースまとめサイト",
       description:"コロナウイルスに関する情報を効率よく集めるため、コロナウイルスに関する記事をまとめたサイトを作成しました。",
       design:"スマホ画面ではヘッダーがハンバーガーメニューになるようにしました。",
       coding:"phpQueryというPHPのライブラリを用いて<a href='https://news.yahoo.co.jp/' target='_blank' rel='noopener'>Yahoo!ニュース</a>から「コロナ」「マスク」「感染」というワードをタイトルに含む記事をスクレピングしました。",

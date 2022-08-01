@@ -21,7 +21,7 @@ import sharedWork from "@/components/shared/Work"
 export default {
    data: function () {
     return {
-      title:"土木工学科掲示板の更新を通知するLINEbot",
+      title:"学科掲示板の更新を通知するLINEbot",
       description:"自分が在籍する土木工学科の掲示板が更新されると通知を送るLINEbotです。掲示板の確認の手間をなくして、見落としを防止するために作成しました。現在土木工学科80人のうち、52人に使用してもらっています。",
       design:"Flex Message Simulatorというサービスを利用してデザインを作成しました。「掲示板を開く」というボタンを押すことで、見出しのページを開くことができるようにしました。",
       coding:"自作のRSSフィードを作成できるFeed43というサービスから掲示板の情報を取得し、更新があった場合はLINEに通知する処理をGASで定期実行するようにしています。",
