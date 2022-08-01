@@ -78,15 +78,17 @@ export default {
 
 .header .container {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  padding: 40px 40px;
+  padding-top: 40px;
+  padding-bottom:40px;
   transition: .3s;
   opacity:1;
 }
 
 .header.show .container{
-  padding: 15px 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .header-logo {

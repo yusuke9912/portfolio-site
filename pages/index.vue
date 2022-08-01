@@ -133,7 +133,7 @@
       <section class="contact section" id="contact">
         <div class="container" :class="{fadeIn_up: visible_contact }">
           <h2 class="title">Contact</h2>
-          <p class="lead">
+          <p class="contact-text">
             お問い合わせは、<br class="sp-only" />SNSまたはメールからお願いいたします。
           </p>
           <div class="contact-list">
