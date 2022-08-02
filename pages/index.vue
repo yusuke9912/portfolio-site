@@ -184,49 +184,49 @@ export default {
       web_works: [
         {
           link: "/works/portfolio",
-          imgUrl: require("@/assets/img/works/portfolio/portfolio.png"),
+          imgUrl: require("@/assets/img/works/portfolio/portfolio_thumbnail.png"),
           alt:"ポートフォリオサイトのサムネイル",
           name: "ポートフォリオサイト",
           description:"作品を紹介するための<br>ポートフォリオサイト"
         },
         {
           link: "/works/daredemojob",
-          imgUrl: require("@/assets/img/works/daredemojob/daredemojob.png"),
+          imgUrl: require("@/assets/img/works/daredemojob/daredemojob_thumbnail.png"),
           alt:"だれでもjobのサムネイル",
           name: "だれでもjob",
           description:"人とのつながりを持ちつつ<br>仕事を依頼、受注できるような<br>高齢者向け求人サイト"
         },
         {
           link: "/works/chat",
-          imgUrl: require("@/assets/img/works/chat/chat.png"),
+          imgUrl: require("@/assets/img/works/chat/chat_thumbnail.png"),
           alt:"らくらくチャットのサムネイル",
           name: "らくらくチャット",
           description:"インターン生の日報共有ツール"
         },
         {
           link: "/works/typing",
-          imgUrl: require("@/assets/img/works/typing/typing.png"),
+          imgUrl: require("@/assets/img/works/typing/typing_thumbnail.png"),
           alt:"タイピングゲームのサムネイル",
           name: "タイピングゲーム",
           description:"ランキングで競えるタイピングゲーム"
         },
         {
           link: "/works/question",
-          imgUrl: require("@/assets/img/works/questions/questions.png"),
+          imgUrl: require("@/assets/img/works/questions/questions_thumbnail.png"),
           alt:"過去問演習サイトのサムネイル",
           name: "情報処理技術者試験の過去問演習サイト",
           description:"基本情報技術者試験の<br>過去問を解けるサイト"
         },
         {
           link: "/works/todo",
-          imgUrl: require("@/assets/img/works/todo/todo.png"),
+          imgUrl: require("@/assets/img/works/todo/todo_thumbnail.png"),
           alt:"TODO管理ツールのサムネイル",
           name: "TODO管理ツール",
           description:"TODOリストを管理できるサイト"
         },
         {
           link: "/works/news",
-          imgUrl: require("@/assets/img/works/news/news.png"),
+          imgUrl: require("@/assets/img/works/news/news_thumbnail.png"),
           alt:"まとめサイトのサムネイル",
           name: "コロナウイルスのニュースまとめサイト",
           description:"コロナウイルス関連のニュースを<br>まとめて確認できるサイト"
@@ -235,7 +235,7 @@ export default {
       native_works:[
         {
           link: "/works/bond",
-          imgUrl: require("@/assets/img/works/bond/bond.png"),
+          imgUrl: require("@/assets/img/works/bond/bond_thumbnail.png"),
           alt:"BONDのサムネイル",
           name: 'BOND',
           description:"「自分」ではなく、「誰か」をよく見せるSNS"
@@ -244,21 +244,21 @@ export default {
       bot_works: [
         {
           link: "/works/board",
-          imgUrl: require("@/assets/img/works/board_bot/board_bot.png"),
+          imgUrl: require("@/assets/img/works/board_bot/board_bot_thumbnail.png"),
           alt:"掲示板通知LINEbotのサムネイル",
           name: "学科掲示板の更新を通知するLINEbot",
           description:"九州大学工学部土木工学科の掲示板が更新されると通知が来るLINEbot"
         },
         {
           link: "/works/corona",
-          imgUrl: require("@/assets/img/works/corona_bot/corona_bot.png"),
+          imgUrl: require("@/assets/img/works/corona_bot/corona_bot_thumbnail.png"),
           alt:"感染者数通知LINEbotのサムネイル",
           name: "福岡県のコロナ感染者数を通知するLINEbot",
           description:"福岡県の日々の感染者数を通知するLINEbot"
         },
         {
           link: "/works/dogcat",
-          imgUrl: require("@/assets/img/works/dog-cat_ai/dog-cat_ai.png"),
+          imgUrl: require("@/assets/img/works/dog-cat_ai/dog-cat_ai_thumbnail.png"),
           alt:"犬猫判別LINEbotのサムネイル",
           name: "犬と猫を判別するLINEbot",
           description:"送った画像が「犬」か「猫」かを判別するLINEbot"

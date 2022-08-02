@@ -223,12 +223,6 @@ img {
   margin-bottom: 40px;
 }
 
-.works-img img {
-  border-radius: 10px;
-  border: 1px solid #e6e6e6;
-  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.1);
-}
-
 .works-name {
   font-size: 14px;
   font-weight: bold;
@@ -243,12 +237,14 @@ img {
 .work-hover figure {
   overflow: hidden;
   border-radius: 10px;
+  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
 .work-hover figure img {
   display: block;
   width: 100%;
   transition: 0.3s;
+  height:250px
 }
 
 .work-hover figure figcaption {
