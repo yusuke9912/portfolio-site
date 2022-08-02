@@ -239,15 +239,18 @@ img {
 .work-hover {
   position: relative;
 }
+
 .work-hover figure {
   overflow: hidden;
   border-radius: 10px;
 }
+
 .work-hover figure img {
   display: block;
   width: 100%;
   transition: 0.3s;
 }
+
 .work-hover figure figcaption {
   opacity: 0;
   transition: 0.3s;
@@ -262,11 +265,13 @@ img {
   border-radius: 10px;
   padding: 5px;
 }
+
 .work-hover figure figcaption .hover-text {
   position: relative;
   width: 100%;
   height: 100%;
 }
+
 .work-hover figure figcaption .hover-text > p {
   width: 100%;
   text-align: center;
@@ -275,13 +280,16 @@ img {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
 .work-hover:hover figure img {
   filter: brightness(35%);
   transform: scale(1.2);
 }
+
 .work-hover:hover figure figcaption {
   opacity: 1;
 }
+
 /*--------------------------------
  Skill
 ---------------------------------*/
@@ -423,6 +431,15 @@ img {
 
   .works-item {
     margin-bottom: 30px;
+  }
+
+  .work-hover:hover figure img {
+    filter: brightness(100%);
+    transform: scale(1);
+  }
+
+  .work-hover:hover figure figcaption {
+    opacity: 0;
   }
 
   /* Skill */
