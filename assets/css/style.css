@@ -70,6 +70,10 @@ img {
   background-color: #f7f7f7;
 }
 
+.container{
+  opacity: 0;
+}
+
 /*--------------------------------
 フェードイン
 ---------------------------------*/
@@ -359,6 +363,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/*media Queries 992
+----------------------------------------------------*/
+@media screen and (max-width: 992px) {
+  .mv-title{
+    font-size: 40px;
+  }
 }
 
 /*media Queries 767
