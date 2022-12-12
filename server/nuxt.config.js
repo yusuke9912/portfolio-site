@@ -71,4 +71,11 @@ export default {
       },
     ],
   },
+
+  watchers: {
+    webpack: {
+      ignored: /node_modules/,
+      poll: true,
+    },
+  },
 }
