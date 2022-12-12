@@ -1,4 +1,4 @@
-<template>
+<template> 
   <div class="wrapper">
     <!-- header -->
     <shared-header></shared-header>
