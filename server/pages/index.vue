@@ -1,4 +1,4 @@
-<template> 
+<template>
   <div class="wrapper">
     <!-- header -->
     <shared-header></shared-header>
@@ -45,19 +45,15 @@
           <h3>Web Application</h3>
           <div class="works-list row">
             <div class="works-item col-lg-4 col-sm-6" v-for="work in web_works" :key="work.name">
-            <a :href="work.link" class="work-hover">
-              <figure>
-                <div class="works-img">
+              <a :href="work.link" class="work-hover">
+                <div class="figure">
                   <img :src="work.imgUrl" :alt="work.alt" />
-                  <figcaption>
-                    <div class="hover-text">
-                      <p v-html="work.description"></p>
-                    </div>
-                  </figcaption>
+                  <div class="caption">
+                      <p class="hover-text" v-html="work.description"></p>
+                  </div>
                 </div>
-              </figure>
-            </a>
-            <p class="works-name" v-html="work.name"></p>
+              </a>
+              <p class="works-name" v-html="work.name"></p>
             </div>
           </div>
           <!-- /web application -->
@@ -65,18 +61,14 @@
           <h3>Native Application</h3>
           <div class="works-list row">
             <div class="works-item col-lg-4 col-sm-6" v-for="work in native_works" :key="work.name">
-            <a :href="work.link" class="work-hover">
-              <figure>
-                <div class="works-img">
+              <a :href="work.link" class="work-hover">
+                <div class="figure">
                   <img :src="work.imgUrl" :alt="work.alt" />
-                  <figcaption>
-                    <div class="hover-text">
-                      <p v-html="work.description"></p>
-                    </div>
-                  </figcaption>
+                  <div class="caption">
+                      <p class="hover-text" v-html="work.description"></p>
+                  </div>
                 </div>
-              </figure>
-            </a>
+              </a>
               <p class="works-name" v-html="work.name"></p>
             </div>
           </div>
@@ -85,19 +77,15 @@
           <h3>LINE Bot</h3>
           <div class="works-list row">
             <div class="works-item col-lg-4 col-sm-6" v-for="work in bot_works" :key="work.name">
-            <a :href="work.link" class="work-hover">
-              <figure>
-                <div class="works-img">
+              <a :href="work.link" class="work-hover">
+                <div class="figure">
                   <img :src="work.imgUrl" :alt="work.alt" />
-                  <figcaption>
-                    <div class="hover-text">
-                      <p v-html="work.description"></p>
-                    </div>
-                  </figcaption>
+                  <div class="caption">
+                      <p class="hover-text" v-html="work.description"></p>
+                  </div>
                 </div>
-              </figure>
-            </a>
-            <p class="works-name" v-html="work.name"></p>
+              </a>
+              <p class="works-name" v-html="work.name"></p>
             </div>
           </div>
         </div>
