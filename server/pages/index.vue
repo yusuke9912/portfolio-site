@@ -53,7 +53,6 @@
                   </div>
                 </div>
               </a>
-              <p class="works-name" v-html="work.name"></p>
             </div>
           </div>
           <!-- /web application -->
@@ -69,7 +68,6 @@
                   </div>
                 </div>
               </a>
-              <p class="works-name" v-html="work.name"></p>
             </div>
           </div>
           <!-- /native application -->
@@ -85,7 +83,6 @@
                   </div>
                 </div>
               </a>
-              <p class="works-name" v-html="work.name"></p>
             </div>
           </div>
         </div>
