@@ -92,25 +92,34 @@
 
       <!-- skill -->
       <section class="skill section" id="skill">
-        <div class="container" :class="{fadeIn_left: visible_skills }">
-          <h2 class="title">Skill</h2>
-          <div class="skill-list row">
-            <div class="col-lg-4 col-sm-6" v-for="skill in skills" :key="skill.name"> 
-            <div class="skill-item">
-              <p class="skill-img">
-                <img :src="skill.imgUrl" :alt="skill.alt" />
-              </p>
-              <div class="skill-body">
-                <h3 class="skill-name">{{ skill.name }}</h3>
-                <p class="skill-text">
-                  {{ skill.text }}
-                </p>
-              </div>
-            </div>
-            </div>
-
-          </div>
-        </div>
+        <v-container :class="{fadeIn_left: visible_skills }">
+          <h2>Skill</h2>
+          <v-row class="skill-list">
+            <v-col cols="12" sm="6" md="4" lg="3" v-for="skill in skills" :key="skill.name"> 
+              <v-card class="mx-auto py-6" elevation="3" @click="skill.show = !skill.show">
+                <v-layout justify-center style="height:150px">
+                  <v-img :src="skill.imgUrl" :alt="skill.alt" contain max-width="100"></v-img>
+                </v-layout>
+                
+                <v-layout justify="space-between" class="mx-auto">
+                  <v-card-title>{{ skill.name }}</v-card-title>
+                  <v-spacer></v-spacer>
+                  <v-card-actions>
+                    <v-btn icon>
+                      <v-icon>{{ skill.show ? "mdi-chevron-up" : "mdi-chevron-down"}}</v-icon>
+                    </v-btn>
+                  </v-card-actions>
+                </v-layout>
+                <v-expand-transition>
+                  <div v-show="skill.show">
+                    <v-divider></v-divider>
+                    <v-card-text>{{ skill.text }}</v-card-text>
+                  </div>
+                </v-expand-transition>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-container>
       </section>
       <!-- /skill -->
 
@@ -255,66 +264,77 @@ export default {
           alt:"HTML5のアイコン",
           name: "HTML5",
           text: "Webアプリケーションの作成に使用しています。デザインカンプをもとにLPを作成した経験があり、SEO対策のためのmetaタグの記入やGoogleアナリティクスの導入も可能です。",
+          show: false,
         },
         {
           imgUrl: require("@/assets/img/skill_icon/css3.svg"),
           alt:"CSS3のアイコン",
           name: "CSS3",
           text: "Webアプリケーションの作成に使用しています。デザインカンプをもとにしたCSSの実装の経験があり、アニメーションの実装やレスポンシブデザインへの対応も可能です。",
+          show: false,
         },
         {
           imgUrl: require("@/assets/img/skill_icon/javascript.svg"),
           alt:"JacaScriptのアイコン",
           name: "JavaScript",
           text: "スライダーやハンバーガーメニューなどWebサイトの動的な処理の実装に使用しています。ライブラリとしてはjQuery,フレームワークとしてはVueの使用経験があります。 Ajaxを用いた非同期通信の実装経験もあります。",
+          show: false,
         },
         {
           imgUrl: require("@/assets/img/skill_icon/php.svg"),
           alt:"PHPのアイコン",
           name: "PHP",
           text: "Webアプリのバックエンドの実装に使用しています。PHPを使って過去問演習アプリやコロナに関するニュースをスクレイピングするアプリを作ったことがあります。また、フレームワークであるLaravelでのAPIの実装経験があります。",
+          show: false,
         },
         {
           imgUrl: require("@/assets/img/skill_icon/ruby.svg"),
           alt:"Rubyのアイコン",
           name: "Ruby",
           text: "Webアプリのバックエンドの実装に使用しています。フレームワークであるRuby on Railsを使用して、タイピングゲームを作ったことがあります。",
+          show: false,
         },
         {
           imgUrl: require("@/assets/img/skill_icon/python.svg"),
           alt:"Pythonのアイコン",
           name: "Python",
           text: "主にWebスクレイピングに使用しています。BeautifulSoupやSeleniumといったライブラリを使用して、twitterや情報処理技術者試験の過去問をスクレイピングしたことがあります。",
+          show: false,
         },
         {
           imgUrl: require("@/assets/img/skill_icon/swift.svg"),
           alt:"Swiftのアイコン",
           name: "Swift",
           text: "iOSアプリの開発に使用しています。YoutubeKitなどのライブラリの使用やFirebaseとの連携の経験があります。また実際にAppleに申請を出し、App Storeにアプリを公開したことがあります。",
+          show: false,
         },
         {
           imgUrl: require("@/assets/img/skill_icon/wordpress.svg"),
           alt:"WordPressのアイコン",
           name: "WordPress",
           text: "Webサイトの作成に使用しています。インターンにおいて社内HPをWordPressを使って作成・修正しました。プラグインの導入、バックアップ、環境の移行の経験があります。",
+          show: false,
         },
         {
           imgUrl: require("@/assets/img/skill_icon/firebase.svg"),
           alt:"Firebaseのアイコン",
           name: "Firebase",
           text: "Webアプリのバックエンドの実装に使用しています。Firebaseを用いたwebサイトの公開、ユーザー認証の実装、メール送信機能、DBの導入の経験があります。リアルタイムチャットアプリを作成する際に使用しました。",
+          show: false,
         },
         {
           imgUrl: require("@/assets/img/skill_icon/aws.svg"),
           alt:"AWSのアイコン",
           name: "AWS",
           text: "Webアプリのインフラの実装に使用しています。AWSを用いて、Webサーバーを立ち上げサイトを公開したことがあります。その際は独自ドメインを取得し、ロードバランサーの導入やSSL化なども行いました。",
+          show: false,
         },
         {
           imgUrl: require("@/assets/img/skill_icon/mysql.svg"),
           alt:"MySQLのアイコン",
           name: "MySQL",
           text: "Webアプリケーション開発時のデータベースに使用しています。LaravelやRuby on Rails での開発時にデータベースとしてMySQLを選択しました。",
+          show: false,
         },
       ],
     };
