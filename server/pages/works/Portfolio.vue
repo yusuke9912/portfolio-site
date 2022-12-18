@@ -59,7 +59,11 @@ export default {
         {
           name: "Nuxt.js",
           imgUrl:require("@/assets/img/skill_icon/nuxt.svg"),
-        },   
+        }, 
+        {
+          name: "Vuetify",
+          imgUrl:require("@/assets/img/skill_icon/vuetify.svg"),
+        },    
         {
           name: "Firebase",
           imgUrl:require("@/assets/img/skill_icon/firebase.svg"),
