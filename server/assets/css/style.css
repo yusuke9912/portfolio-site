@@ -45,20 +45,6 @@ img {
   color:#fff;
 }
 
-/*--------------------------------
-スクロールバー
----------------------------------*/
-::-webkit-scrollbar
-{
-  width:7px;
-  background:#eee;
-}
-
-::-webkit-scrollbar-thumb
-{
-  background:var(--main-color);
-  border-radius: 3.5px;
-}
 
 /*--------------------------------
  レイアウト
