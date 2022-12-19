@@ -125,33 +125,23 @@
 
       <!-- contact -->
       <section class="contact section" id="contact">
-        <div class="container" :class="{fadeIn_up: visible_contact }">
-          <h2 class="title">Contact</h2>
-          <p class="contact-text">
+        <v-container>
+          <h2>Contact</h2>
+          <p class="py-1">
             お問い合わせは、<br class="sp-only" />SNSまたはメールからお願いいたします。
           </p>
-          <div class="contact-list">
-            <a
-              class="contact-item"
-              href="https://twitter.com/uke_9912"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="@/assets/img/twitter.svg" alt="twitterのアイコン" />
+          <v-layout justify-center>
+            <a href="https://twitter.com/uke_9912" target="_blank" rel="noopener" class="px-3">
+              <img src="@/assets/img/twitter.svg" width="40" alt="twitterのアイコン" />
             </a>
-            <a
-              class="contact-item"
-              href="https://github.com/yusuke9912"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="@/assets/img/github.svg" alt="githubのアイコン" />
+            <a href="https://github.com/yusuke9912" target="_blank" rel="noopener" class="px-3">
+              <img src="@/assets/img/github.svg" width="40" alt="githubのアイコン" />
             </a>
-            <a href="mailto:nakagawa.1202.y@gmail.com">
-              <img src="@/assets/img/mail.svg" alt="メールのアイコン" />
+            <a href="mailto:nakagawa.1202.y@gmail.com" class="px-3">
+              <img src="@/assets/img/mail.svg" width="40" alt="メールのアイコン" />
             </a>
-          </div>
-        </div>
+          </v-layout>
+        </v-container>
       </section>
       <!-- /contact -->
     </main>
