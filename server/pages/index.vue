@@ -4,25 +4,25 @@
     <shared-header></shared-header>
     <!-- /header -->
 
-    <main class="content">
+    <v-main>
       <!-- mv -->
       <div class="mv">
-        <div class="mv-container">
-          <p class="mv-title">Yusuke Nakagawa's Portfolio</p>
-          <p class="mv-subtitle">Web Engineer</p>
+        <div>
+          <p class="text-h2 font-weight-black" style="animation: fadeIn_up 2s;">Yusuke Nakagawa's Portfolio</p>
+          <p class="text-h3 font-weight-black" style="animation: fadeIn_up 2s;">Web Engineer</p>
         </div>
       </div>
       <!-- /mv -->
 
       <!-- about -->
-      <section class="about section" id="about">
-        <div class="container" :class="{fadeIn_left:visible_about}">
-          <h2 class="title">About</h2>
-          <div class="profile">
-            <p class="profile-img">
-              <img src="@/assets/img/profile.jpg" alt="プロフィール画像" />
-            </p>
-            <div class="profile-body">
+      <section class="section" id="about">
+        <v-container>
+          <h2 class="text-h3 text-center font-weight-black">About</h2>
+          <v-row justify="center">
+            <v-col cols="10" sm="3">
+                <img src="@/assets/img/profile.jpg" alt="プロフィール画像" style="width:90%;border-radius:50%"/>
+            </v-col>
+            <v-col cols="10" sm="7">
               <p>
                 はじめまして。<br>九州大学工学部土木工学科4年の中川雄介と申します。
               </p>
@@ -31,69 +31,69 @@
                 そうした中でモノづくりの楽しさ、作ったものを他の人に使ってもらえる喜びを知り、この道に進むことを決めました。
               </p>
               <p>自分や世の中にあるアイデアをしっかりと形にすることができる、多くの技術の引き出しを持ったエンジニアになれるよう努力し続けます。</p>
-            </div>
-          </div>
-        </div>
+            </v-col>
+          </v-row>
+        </v-container>
       </section>
       <!-- /about -->
 
       <!-- works -->
-      <section class="works section" id="works">
-        <div class="container" :class="{fadeIn_right:visible_works }">
-          <h2 class="title">Works</h2>
+      <section class="section" id="works">
+        <v-container>
+          <h2 class="text-h3 font-weight-black">Works</h2>
           <!-- web application -->
-          <h3>Web Application</h3>
-          <div class="works-list row">
-            <div class="works-item col-lg-4 col-sm-6" v-for="work in web_works" :key="work.name">
+          <h3 class="mt-8">Web Application</h3>
+          <v-row>
+            <v-col cols="12" sm="6" md="4" v-for="work in web_works" :key="work.name">
               <a :href="work.link" class="work-hover">
                 <div class="figure">
                   <img :src="work.imgUrl" :alt="work.alt" />
                   <div class="caption">
-                      <p class="hover-text" v-html="work.description"></p>
+                      <p class="text-body-1 hover-text" v-html="work.description"></p>
                   </div>
                 </div>
               </a>
-            </div>
-          </div>
+            </v-col>
+          </v-row>
           <!-- /web application -->
           <!-- native application -->
-          <h3>Native Application</h3>
-          <div class="works-list row">
-            <div class="works-item col-lg-4 col-sm-6" v-for="work in native_works" :key="work.name">
+          <h3 class="mt-8">Native Application</h3>
+          <v-row>
+            <v-col cols="12" sm="6" md="4" v-for="work in native_works" :key="work.name">
               <a :href="work.link" class="work-hover">
                 <div class="figure">
                   <img :src="work.imgUrl" :alt="work.alt" />
                   <div class="caption">
-                      <p class="hover-text" v-html="work.description"></p>
+                      <p class="text-body-1 hover-text" v-html="work.description"></p>
                   </div>
                 </div>
               </a>
-            </div>
-          </div>
+            </v-col>
+          </v-row>
           <!-- /native application -->
           <!-- line bot -->
-          <h3>LINE Bot</h3>
-          <div class="works-list row">
-            <div class="works-item col-lg-4 col-sm-6" v-for="work in bot_works" :key="work.name">
+          <h3 class="mt-8">LINE Bot</h3>
+          <v-row>
+            <v-col cols="12" sm="6" md="4" v-for="work in bot_works" :key="work.name">
               <a :href="work.link" class="work-hover">
                 <div class="figure">
                   <img :src="work.imgUrl" :alt="work.alt" />
                   <div class="caption">
-                      <p class="hover-text" v-html="work.description"></p>
+                      <p class="text-body-1 hover-text" v-html="work.description"></p>
                   </div>
                 </div>
               </a>
-            </div>
-          </div>
-        </div>
+            </v-col>
+          </v-row>
+        </v-container>
         <!-- /line bot -->
       </section>
       <!-- /works -->
 
       <!-- skill -->
-      <section class="skill section" id="skill">
-        <v-container :class="{fadeIn_left: visible_skills }">
-          <h2>Skill</h2>
+      <section class="section" id="skill">
+        <v-container>
+          <h2 class="text-h3 font-weight-black">Skill</h2>
           <v-row class="skill-list">
             <v-col cols="12" sm="6" md="4" lg="3" v-for="skill in skills" :key="skill.name"> 
               <v-card class="mx-auto py-6" elevation="3" @click="skill.show = !skill.show">
@@ -124,10 +124,10 @@
       <!-- /skill -->
 
       <!-- contact -->
-      <section class="contact section" id="contact">
+      <section class="section" id="contact">
         <v-container>
-          <h2>Contact</h2>
-          <p class="py-1">
+          <h2 class="text-h3 text-center font-weight-black">Contact</h2>
+          <p class="py-1 text-center">
             お問い合わせは、<br class="sp-only" />SNSまたはメールからお願いいたします。
           </p>
           <v-layout justify-center>
@@ -144,7 +144,7 @@
         </v-container>
       </section>
       <!-- /contact -->
-    </main>
+    </v-main>
 
     <!-- footer -->
     <shared-footer></shared-footer>

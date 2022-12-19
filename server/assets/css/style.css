@@ -54,13 +54,19 @@ img {
   overflow: hidden;
 }
 
+/* .section:nth-of-type(odd) {
+  background-color: #505050;
+  color: #ffffff;
+}
+
+.section:nth-of-type(odd) .title{
+  color: #ffffff;
+} */
+
 .section:nth-of-type(even) {
   background-color: #f7f7f7;
 }
 
-.container{
-  opacity: 0;
-}
 
 /*--------------------------------
 フェードイン
@@ -120,19 +126,6 @@ img {
 }
 
 /*--------------------------------
- 見出し
----------------------------------*/
-.title {
-  font-size: 50px;
-  font-weight: bold;
-  line-height: 1;
-  margin-bottom: 40px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: #000000;
-}
-
-/*--------------------------------
  メインビジュアル
 ---------------------------------*/
 .mv {
@@ -147,81 +140,13 @@ img {
   color:#fff;
 }
 
-.mv-container {
-  padding: 0 40px;
-}
-
-.mv-title {
-  font-size: 60px;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 5px;
-  letter-spacing: 0.1em;
-  animation: fadeIn_up 2s;
-}
-.mv-subtitle {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 1;
-  margin-bottom: 40px;
-  letter-spacing: 0.08em;
-  animation: fadeIn_up 2s;
-}
-
 /*--------------------------------
  About
 ---------------------------------*/
-.profile {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 900px;
-  margin: 0 auto;
-}
-.profile-img {
-  width: 25%;
-  margin-right: 30px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-}
-.profile-img img {
-  border-radius: 50%;
-}
-.profile-body {
-  flex: 1;
-}
-
-.profile-body p {
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-.profile-body p:not(:last-child) {
-  margin-bottom: 30px;
-}
 
 /*--------------------------------
  Works
 ---------------------------------*/
-.works .title{
-  text-align:left;
-}
-
-.works-list {
-  margin-bottom: 40px;
-}
-
-.works-item {
-  margin-bottom: 40px;
-}
-
-.works-name {
-  font-size: 14px;
-  font-weight: bold;
-  margin-top: 8px;
-  text-align: center;
-}
-
 .work-hover .figure {
   overflow: hidden;
   border-radius: 10px;
@@ -271,29 +196,6 @@ img {
 /*--------------------------------
  Contact
 ---------------------------------*/
-.contact {
-  text-align: center;
-}
-
-.contact img {
-  width: 40px;
-}
-
-.contact-item:not(:last-child) {
-  margin-right: 20px;
-}
-
-.contact-text {
-  font-size: 16px;
-  line-height: 1.8;
-  margin-bottom: 30px;
-}
-
-.contact-list{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 /*media Queries 992
 ----------------------------------------------------*/
@@ -306,22 +208,12 @@ img {
 /*media Queries 767
 ----------------------------------------------------*/
 @media screen and (max-width: 767px) {
-  body {
-    font-size: 14px;
-  }
-
   .pc-only {
     display: none;
   }
 
   .sp-only {
     display: block;
-  }
-
-  /* 見出し */
-  .title {
-    font-size: 26px;
-    margin-bottom: 20px;
   }
 
   .lead {
@@ -335,41 +227,9 @@ img {
     padding: 60px 0;
   }
 
-  .container {
-    padding: 0 20px;
-  }
-
   /*  メインビジュアル */
-  .mv-container {
-    padding: 0 20px;
-  }
-
-  .mv-title {
-    font-size: 30px;
-  }
-  .mv-subtitle {
-    font-size: 22px;
-    margin-bottom: 20px;
-  }
-
-  .mv-text {
-    font-size: 14px;
-    line-height: 1.7;
-  }
 
   /* Works */
-  .works-name {
-    font-size: 12px;
-  }
-
-  .works-info {
-    margin-top: 3px;
-  }
-
-  .works-item {
-    margin-bottom: 30px;
-  }
-
   .work-hover:hover .figure img {
     filter: brightness(100%);
     transform: scale(1);
@@ -380,36 +240,6 @@ img {
   }
 
   /* Skill */
-  .skill-item {
-    margin-bottom: 30px;
-  }
-
-  .skill-name {
-    margin-bottom: 5px;
-  }
-
-  .skill-text {
-    font-size: 13px;
-    line-height: 1.7;
-  }
 
   /* About */
-  .profile {
-    display: block;
-  }
-  .profile-img {
-    width: 150px;
-    margin: 0 auto;
-    margin-bottom: 25px;
-  }
-
-  .profile-body p {
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-  .profile-body p:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
 }

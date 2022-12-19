@@ -2,14 +2,14 @@
   <header class="header" :class="{ show: visible_header }" >
   <div class="container">
     <h1 class="header-logo">
-      <router-link to="/">Yusuke Nakagawa's Portfolio</router-link>
+      <router-link to="/" class="white--text">Yusuke Nakagawa's Portfolio</router-link>
     </h1>
     <nav class="gnav">
       <ul class="gnav-list">
-        <li class="gnav-item"><router-link to="/#about">About</router-link></li>
-        <li class="gnav-item"><router-link to="/#works">Works</router-link></li>
-        <li class="gnav-item"><router-link to="/#skill">Skill</router-link></li>
-        <li class="gnav-item"><router-link to="/#contact">Contact</router-link></li>
+        <li class="gnav-item"><router-link to="/#about" class="white--text">About</router-link></li>
+        <li class="gnav-item"><router-link to="/#works" class="white--text">Works</router-link></li>
+        <li class="gnav-item"><router-link to="/#skill" class="white--text">Skill</router-link></li>
+        <li class="gnav-item"><router-link to="/#contact" class="white--text">Contact</router-link></li>
       </ul>
     </nav>
 
@@ -21,10 +21,10 @@
   </button>
   <nav class="menu-body" :class="{open:flag}">
       <ul>
-        <li class="gnav-item"><router-link to="/#about" v-on:click="flag = false">About</router-link></li>
-        <li class="gnav-item"><router-link to="/#works" v-on:click="flag = false">Works</router-link></li>
-        <li class="gnav-item"><router-link to="/#skill" v-on:click="flag = false">Skill</router-link></li>
-        <li class="gnav-item"><router-link to="/#contact" v-on:click="flag = false">Contact</router-link></li>
+        <li class="gnav-item"><router-link to="/#about" class="white--text" v-on:click="flag = false">About</router-link></li>
+        <li class="gnav-item"><router-link to="/#works" class="white--text" v-on:click="flag = false">Works</router-link></li>
+        <li class="gnav-item"><router-link to="/#skill" class="white--text" v-on:click="flag = false">Skill</router-link></li>
+        <li class="gnav-item"><router-link to="/#contact" class="white--text" v-on:click="flag = false">Contact</router-link></li>
       </ul>
       </nav>
   <div class="menu-bg" :class="{open:flag}" v-on:click="flag = false"></div>
