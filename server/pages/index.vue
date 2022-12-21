@@ -8,21 +8,21 @@
       <!-- mv -->
       <div class="mv">
         <div>
-          <p class="text-h2 font-weight-black" style="animation: fadeIn_up 2s;">Yusuke Nakagawa's Portfolio</p>
-          <p class="text-h3 font-weight-black" style="animation: fadeIn_up 2s;">Web Engineer</p>
+          <p class="text-h5 text-sm-h2 font-weight-black" style="animation: fadeIn_up 2s;">Yusuke Nakagawa's Portfolio</p>
+          <p class="text-h6 text-sm-h3 font-weight-black" style="animation: fadeIn_up 2s;">Web Engineer</p>
         </div>
       </div>
       <!-- /mv -->
 
       <!-- about -->
-      <section class="section" id="about">
+      <section class="py-16" id="about">
         <v-container>
-          <h2 class="text-h3 text-center font-weight-black">About</h2>
+          <h2 class="text-h4 text-sm-h3 text-center font-weight-black">About</h2>
           <v-row justify="center">
-            <v-col cols="10" sm="3">
-                <img src="@/assets/img/profile.jpg" alt="プロフィール画像" style="width:90%;border-radius:50%"/>
+            <v-col cols="10" md="3" class="text-center">
+                <img src="@/assets/img/profile.jpg" alt="プロフィール画像" style="width:90%;border-radius:50%;max-width:200px"/>
             </v-col>
-            <v-col cols="10" sm="7">
+            <v-col cols="10" md="7">
               <p>
                 はじめまして。<br>九州大学工学部土木工学科4年の中川雄介と申します。
               </p>
@@ -38,9 +38,9 @@
       <!-- /about -->
 
       <!-- works -->
-      <section class="section" id="works">
+      <section class="py-16" id="works">
         <v-container>
-          <h2 class="text-h3 font-weight-black">Works</h2>
+          <h2 class="text-h4 text-sm-h3 font-weight-black">Works</h2>
           <!-- web application -->
           <h3 class="mt-8">Web Application</h3>
           <v-row>
@@ -91,9 +91,9 @@
       <!-- /works -->
 
       <!-- skill -->
-      <section class="section" id="skill">
+      <section class="py-16" id="skill">
         <v-container>
-          <h2 class="text-h3 font-weight-black">Skill</h2>
+          <h2 class="text-h4 text-sm-h3 font-weight-black">Skill</h2>
           <v-row class="skill-list">
             <v-col cols="12" sm="6" md="4" lg="3" v-for="skill in skills" :key="skill.name"> 
               <v-card class="mx-auto py-6" elevation="3" @click="skill.show = !skill.show">
@@ -124,9 +124,9 @@
       <!-- /skill -->
 
       <!-- contact -->
-      <section class="section" id="contact">
+      <section class="py-16" id="contact">
         <v-container>
-          <h2 class="text-h3 text-center font-weight-black">Contact</h2>
+          <h2 class="text-h4 text-sm-h3 text-center font-weight-black">Contact</h2>
           <p class="py-1 text-center">
             お問い合わせは、<br class="sp-only" />SNSまたはメールからお願いいたします。
           </p>

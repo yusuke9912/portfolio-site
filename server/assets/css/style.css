@@ -49,21 +49,13 @@ img {
 /*--------------------------------
  レイアウト
 ---------------------------------*/
-.section {
-  padding: 90px 0;
-  overflow: hidden;
-}
-
 /* .section:nth-of-type(odd) {
   background-color: #505050;
   color: #ffffff;
 }
+*/
 
-.section:nth-of-type(odd) .title{
-  color: #ffffff;
-} */
-
-.section:nth-of-type(even) {
+section:nth-of-type(even) {
   background-color: #f7f7f7;
 }
 
@@ -216,16 +208,7 @@ img {
     display: block;
   }
 
-  .lead {
-    font-size: 14px;
-    line-height: 1.7;
-    margin-bottom: 20px;
-  }
-
   /* レイアウト */
-  .section {
-    padding: 60px 0;
-  }
 
   /*  メインビジュアル */
 
