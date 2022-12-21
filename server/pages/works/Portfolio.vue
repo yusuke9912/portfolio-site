@@ -23,7 +23,7 @@ export default {
     return {
       title:"ポートフォリオサイト",
       description:"自分がこれまで作ってきた作品を紹介するために作成しました。",
-      design:"HTMLテンプレートのデザインを参考にして作成しました。シンプルなデザインを心掛けました。",
+      design:"VuetifyというVueのUIフレームワークを利用しました。",
       coding:"フレームワークにVueを使用することにより、保守性の向上とサイトのSPA化を行いました。また、ハンバーガーメニューやスライドショー、スクロール時のアニメーションなどの画面の動きの実装も行いました。",
       hasGithubURL:true,
       githubURL: "https://github.com/yusuke9912/portfolio-site",
