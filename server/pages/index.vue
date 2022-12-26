@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div>
     <!-- header -->
     <shared-header></shared-header>
     <!-- /header -->
@@ -97,9 +97,7 @@
           <v-row class="skill-list">
             <v-col cols="12" sm="6" md="4" lg="3" v-for="skill in skills" :key="skill.name"> 
               <v-card class="mx-auto py-6" elevation="3" @click="skill.show = !skill.show">
-                <v-layout justify-center style="height:150px">
-                  <v-img :src="skill.imgUrl" :alt="skill.alt" contain max-width="100"></v-img>
-                </v-layout>
+                  <v-img :src="skill.imgUrl" :alt="skill.alt" contain max-width="80" height="150" class="my-0 mx-auto"></v-img>
                 
                 <v-layout justify="space-between" class="mx-auto">
                   <v-card-title>{{ skill.name }}</v-card-title>
