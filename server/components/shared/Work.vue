@@ -3,32 +3,32 @@
         <shared-header></shared-header>
 
         <v-main>
-          <v-container style="padding-top: 140px; padding-bottom: 120px;">
+          <v-container style="padding-top: 140px;">
             <h2 class="text-center mb-5 font-weight-black" v-html="title"></h2>
             <div class="article-body">
-                <p class="mx-5">
+              <p class="mx-5">
                 <carousel :per-page="1">
                     <slide v-for="screenshot in screenshots" :key="screenshot.imgUrl">
-                    <img :src="screenshot.imgUrl" :alt="title + 'のスクリーンショット'">
+                      <img :src="screenshot.imgUrl" :alt="title + 'のスクリーンショット'">
                     </slide>
                 </carousel>
-                </p>
-                <h3>開発の経緯</h3>
-                <p v-html="description"></p>
-                <h3>使用言語/ツール</h3>
-                <v-layout align-center overflow-x-auto>
-                  <img v-for="skill in skills" :key="skill.name" :src="skill.imgUrl" :alt="skill.name + 'のアイコン'" v-b-tooltip.hover.bottom.v-dark :title="skill.name" width="60" class="mr-5">
-                </v-layout>
-                <h3>デザインについて</h3>
-                <p v-html="design"></p>
-                <h3>コーディングについて</h3>
-                <p v-html="coding"></p>
+              </p>
+              <h3>開発の経緯</h3>
+              <p v-html="description"></p>
+              <h3>使用言語/ツール</h3>
+              <v-layout align-center overflow-x-auto>
+                <img v-for="skill in skills" :key="skill.name" :src="skill.imgUrl" :alt="skill.name + 'のアイコン'" v-b-tooltip.hover.bottom.v-dark :title="skill.name" width="60" class="mr-5">
+              </v-layout>
+              <h3>デザインについて</h3>
+              <p v-html="design"></p>
+              <h3>コーディングについて</h3>
+              <p v-html="coding"></p>
+              <v-layout class="links mt-10" justify-center wrap>
+                <router-link to="/#works" class="works-link mx-2">作品一覧へ</router-link>
+                <a :href="githubURL" target="_blank" rel="noopener" class="github-link mx-2" v-if="hasGithubURL">github.comで詳しく<fa :icon="['fas', 'arrow-up-right-from-square']" class="external-link-icon" /></a>
+                <a :href="serviceURL" target="_blank" rel="noopener" class="service-link mx-2" v-if="hasServiceURL">実際に触ってみる<fa :icon="['fas', 'arrow-up-right-from-square']" class="external-link-icon" /></a>
+              </v-layout>
             </div>
-            <v-layout class="links" justify-center>
-                <router-link to="/#works" class="works-link">作品一覧へ</router-link>
-                <a :href="githubURL" target="_blank" rel="noopener" class="github-link" v-if="hasGithubURL">github.comで詳しく<fa :icon="['fas', 'arrow-up-right-from-square']" class="external-link-icon" /></a>
-                <a :href="serviceURL" target="_blank" rel="noopener" class="service-link" v-if="hasServiceURL">実際に触ってみる<fa :icon="['fas', 'arrow-up-right-from-square']" class="external-link-icon" /></a>
-            </v-layout>
           </v-container>
         </v-main>
 
