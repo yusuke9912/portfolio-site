@@ -1,35 +1,35 @@
 <template>
   <header class="header" :class="{ show: visible_header }" >
-  <div class="container">
-    <h1 class="header-logo">
+  <v-container>
+    <h1 class="text-subtitle-1 text-sm-h6 font-weight-black">
       <router-link to="/" class="white--text">Yusuke Nakagawa's Portfolio</router-link>
     </h1>
-    <nav class="gnav">
-      <ul class="gnav-list">
-        <li class="gnav-item"><router-link to="/#about" class="white--text">About</router-link></li>
-        <li class="gnav-item"><router-link to="/#works" class="white--text">Works</router-link></li>
-        <li class="gnav-item"><router-link to="/#skill" class="white--text">Skill</router-link></li>
-        <li class="gnav-item"><router-link to="/#contact" class="white--text">Contact</router-link></li>
-      </ul>
+    <nav class="d-none d-sm-block">
+      <v-layout>
+        <span class="gnav-item mx-5"><router-link to="/#about" class="white--text">About</router-link></span>
+        <span class="gnav-item mx-5"><router-link to="/#works" class="white--text">Works</router-link></span>
+        <span class="gnav-item mx-5"><router-link to="/#skill" class="white--text">Skill</router-link></span>
+        <span class="gnav-item mx-5"><router-link to="/#contact" class="white--text">Contact</router-link></span>
+      </v-layout>
     </nav>
 
     <!-- ハンバーガーメニュー -->
-  <button class="menu-open" v-on:click="flag = !flag">
-    <span :class="{open:flag}"></span>
-    <span :class="{open:flag}"></span>
-    <span :class="{open:flag}"></span>
-  </button>
-  <nav class="menu-body" :class="{open:flag}">
+    <button class="menu-open d-block d-sm-none" v-on:click="flag = !flag">
+      <span :class="{open:flag}"></span>
+      <span :class="{open:flag}"></span>
+      <span :class="{open:flag}"></span>
+    </button>
+    <nav class="menu-body" :class="{open:flag}">
       <ul>
         <li class="gnav-item"><router-link to="/#about" class="white--text" v-on:click="flag = false">About</router-link></li>
         <li class="gnav-item"><router-link to="/#works" class="white--text" v-on:click="flag = false">Works</router-link></li>
         <li class="gnav-item"><router-link to="/#skill" class="white--text" v-on:click="flag = false">Skill</router-link></li>
         <li class="gnav-item"><router-link to="/#contact" class="white--text" v-on:click="flag = false">Contact</router-link></li>
       </ul>
-      </nav>
-  <div class="menu-bg" :class="{open:flag}" v-on:click="flag = false"></div>
-  </div>
-</header>
+    </nav>
+    <div class="menu-bg" :class="{open:flag}" v-on:click="flag = false"></div>
+    </v-container>
+  </header>
 </template>
 
 
@@ -91,29 +91,6 @@ export default {
   padding-bottom: 15px;
 }
 
-.header-logo {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-right: 20px;
-  letter-spacing: 0.05em;
-}
-
-.header-logo a {
-  color: #fff;
-}
-
-.gnav-list {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  margin-bottom: 0;
-}
-
-.gnav-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .gnav-item a {
   position: relative;
   font-size: 16px;
@@ -122,7 +99,6 @@ export default {
   padding: 5px 0;
   transition: 0.3s;
   letter-spacing: 0.05em;
-  color: #fff;
 }
 .gnav-item a:after {
   position: absolute;
@@ -222,37 +198,5 @@ export default {
 
 .menu-body.open {
   transform: translateX(0%);
-}
-
-@media screen and (max-width: 767px) {
-  .header .container {
-    padding: 15px;
-  }
-
-  .header-logo {
-    font-size: 15px;
-    margin-right: 15px;
-  }
-
-  .gnav{
-    display: none;
-  }
-
-  .gnav-item:not(:last-child) {
-    margin-right: 10px;
-  }
-
-  .gnav-item a {
-    font-size: 16px;
-  }
-
-  .gnav-item a:after {
-    display: none;
-  }
-
-/* ハンバーガーメニュー */
-  .menu-open{
-    display: block;
-  }
 }
 </style>
