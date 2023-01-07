@@ -16,7 +16,7 @@
 
       <!-- about -->
       <section class="py-16" id="about">
-        <v-container>
+        <v-container :class="{fadeIn_left:visible_about}">
           <h2 class="text-h4 text-sm-h3 text-center font-weight-black">About</h2>
           <v-row justify="center">
             <v-col cols="10" md="3" class="text-center">
@@ -39,7 +39,7 @@
 
       <!-- works -->
       <section class="py-16" id="works">
-        <v-container>
+        <v-container :class="{fadeIn_right:visible_works}">
           <h2 class="text-h4 text-sm-h3 font-weight-black">Works</h2>
           <!-- web application -->
           <h3 class="mt-8">Web Application</h3>
@@ -92,7 +92,7 @@
 
       <!-- skill -->
       <section class="py-16" id="skill">
-        <v-container>
+        <v-container :class="{fadeIn_left:visible_skills}">
           <h2 class="text-h4 text-sm-h3 font-weight-black">Skill</h2>
           <v-row class="skill-list">
             <v-col cols="12" sm="6" md="4" lg="3" v-for="skill in skills" :key="skill.name"> 
@@ -123,7 +123,7 @@
 
       <!-- contact -->
       <section class="py-16" id="contact">
-        <v-container>
+        <v-container :class="{fadeIn_up:visible_contact}">
           <h2 class="text-h4 text-sm-h3 text-center font-weight-black">Contact</h2>
           <p class="py-1 text-center">
             お問い合わせは、<br class="sp-only" />SNSまたはメールからお願いいたします。
@@ -159,10 +159,10 @@ export default {
   name: "home",
   data: function () {
     return {
-      visible_about: true,
-      visible_works: true,
-      visible_skills: true,
-      visible_contact: true,
+      visible_about: false,
+      visible_works: false,
+      visible_skills: false,
+      visible_contact: false,
       web_works: [
         {
           link: "/works/portfolio",
