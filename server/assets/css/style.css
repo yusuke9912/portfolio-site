@@ -59,13 +59,89 @@ section:nth-of-type(even) {
   background-color: #f7f7f7;
 }
 
-.container{
-  opacity:0;
-}
-
 /*--------------------------------
 フェードイン
 ---------------------------------*/
+.work_web, .work_native, .work_bot, .skill, .about, .contact{
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 1.0s;
+}
+
+.work_web.fadeIn, .work_native.fadeIn, .work_bot.fadeIn, .skill.fadeIn, .about.fadeIn, .contact.fadeIn{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about:nth-of-type(1){
+  transition-delay: 0s;
+}
+
+.about:nth-of-type(2){
+  transition-delay: 0.3s;
+}
+
+.contact:nth-of-type(1){
+  transition-delay: 0s;
+}
+
+.contact:nth-of-type(2){
+  transition-delay: 0.3s;
+}
+
+.work_web:nth-of-type(3n+1), .work_native:nth-of-type(3n+1), .work_bot:nth-of-type(3n+1){
+  transition-delay: 0s;
+}
+
+.work_web:nth-of-type(3n+2), .work_native:nth-of-type(3n+2), .work_bot:nth-of-type(3n+2){
+  transition-delay: 0.1s;
+}
+
+
+.work_web:nth-of-type(3n), .work_native:nth-of-type(3n), .work_bot:nth-of-type(3n){
+  transition-delay: 0.2s;
+}
+
+.skill:nth-of-type(4n+1){
+  transition-delay: 0s;
+}
+
+.skill:nth-of-type(4n+2){
+  transition-delay: 0.1s;
+}
+
+.skill:nth-of-type(4n+3){
+  transition-delay: 0.2s;
+}
+
+.skill:nth-of-type(4n){
+  transition-delay: 0.3s;
+}
+
+@media screen and (max-width: 1264px) {
+  .skill:nth-of-type(3n+1){
+    transition-delay: 0s;
+  }
+  
+  .skill:nth-of-type(3n+2){
+    transition-delay: 0.1s;
+  }
+  
+  .skill:nth-of-type(3n){
+    transition-delay: 0.2s;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .work_web:nth-of-type(2n+1), .work_native:nth-of-type(2n+1), .work_bot:nth-of-type(2n+1), .skill:nth-of-type(2n+1){
+    transition-delay: 0s;
+  }
+  
+  .work_web:nth-of-type(2n), .work_native:nth-of-type(2n), .work_bot:nth-of-type(2n), .skill:nth-of-type(2n){
+    transition-delay: 0.1s;
+  }
+}
+
 .fadeIn_up {
   animation: fadeIn_up 2s;
   opacity: 1;
@@ -84,42 +160,6 @@ section:nth-of-type(even) {
   }
 }
 
-.fadeIn_left {
-  animation: fadeIn_left 2s;
-  opacity: 1;
-}
-
-@keyframes fadeIn_left {
-  0% {
-    opacity: 0;
-    transform: translateX(-200px);
-    transition-duration:.7s;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-    transition-duration:.7s;
-  }
-}
-
-.fadeIn_right {
-  animation: fadeIn_right 2s;
-  opacity: 1;
-}
-
-@keyframes fadeIn_right {
-  0% {
-    opacity: 0;
-    transform: translateX(200px);
-    transition-duration:.7s;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-    transition-duration:.7s;
-  }
-}
-
 /*--------------------------------
  メインビジュアル
 ---------------------------------*/
@@ -134,10 +174,6 @@ section:nth-of-type(even) {
   background-size: cover;
   color:#fff;
 }
-
-/*--------------------------------
- About
----------------------------------*/
 
 /*--------------------------------
  Works
@@ -184,14 +220,6 @@ section:nth-of-type(even) {
   transform: translate(-50%, -50%);
 }
 
-/*--------------------------------
- Skill
----------------------------------*/
-
-/*--------------------------------
- Contact
----------------------------------*/
-
 /*media Queries 992
 ----------------------------------------------------*/
 @media screen and (max-width: 992px) {
@@ -211,10 +239,6 @@ section:nth-of-type(even) {
     display: block;
   }
 
-  /* レイアウト */
-
-  /*  メインビジュアル */
-
   /* Works */
   .work-hover:hover .figure img {
     filter: brightness(100%);
@@ -224,8 +248,4 @@ section:nth-of-type(even) {
   .work-hover:hover .figure .caption {
     opacity: 0;
   }
-
-  /* Skill */
-
-  /* About */
 }
