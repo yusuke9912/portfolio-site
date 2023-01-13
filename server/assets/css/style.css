@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family:   "Meiryo","MS PGothic", Arial, sans-serif;
+  font-family:Roboto , sans-serif;
   font-size: 16px;
   letter-spacing: 0.05em;
   color: var(--main-color);
