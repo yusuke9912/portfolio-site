@@ -62,83 +62,83 @@ section:nth-of-type(even) {
 /*--------------------------------
 フェードイン
 ---------------------------------*/
-.work_web, .work_native, .work_bot, .skill, .about, .contact{
+.work_web_fedeIn, .work_native_fedeIn, .work_bot_fedeIn, .skill_fedeIn, .about_fedeIn1, .about_fedeIn2, .contact_fedeIn1, .contact_fedeIn2{
   opacity: 0;
   transform: translateY(10px);
   transition: all 1.0s;
 }
 
-.work_web.fadeIn, .work_native.fadeIn, .work_bot.fadeIn, .skill.fadeIn, .about.fadeIn, .contact.fadeIn{
+.work_web_fedeIn.fadeIn, .work_native_fedeIn.fadeIn, .work_bot_fedeIn.fadeIn, .skill_fedeIn.fadeIn, .about_fedeIn1.fadeIn, .about_fedeIn2.fadeIn, .contact_fedeIn1.fadeIn, .contact_fedeIn2.fadeIn{
   opacity: 1;
   transform: translateY(0);
 }
 
-.about:nth-of-type(1){
+.about_fedeIn1{
   transition-delay: 0s;
 }
 
-.about:nth-of-type(2){
+.about_fedeIn2{
   transition-delay: 0.3s;
 }
 
-.contact:nth-of-type(1){
+.contact_fedeIn1{
   transition-delay: 0s;
 }
 
-.contact:nth-of-type(2){
+.contact_fedeIn2{
   transition-delay: 0.3s;
 }
 
-.work_web:nth-of-type(3n+1), .work_native:nth-of-type(3n+1), .work_bot:nth-of-type(3n+1){
+.work_web_fedeIn:nth-of-type(3n+1), .work_native_fedeIn:nth-of-type(3n+1), .work_bot_fedeIn:nth-of-type(3n+1){
   transition-delay: 0s;
 }
 
-.work_web:nth-of-type(3n+2), .work_native:nth-of-type(3n+2), .work_bot:nth-of-type(3n+2){
-  transition-delay: 0.1s;
-}
-
-
-.work_web:nth-of-type(3n), .work_native:nth-of-type(3n), .work_bot:nth-of-type(3n){
+.work_web_fedeIn:nth-of-type(3n+2), .work_native_fedeIn:nth-of-type(3n+2), .work_bot_fedeIn:nth-of-type(3n+2){
   transition-delay: 0.2s;
 }
 
-.skill:nth-of-type(4n+1){
+
+.work_web_fedeIn:nth-of-type(3n), .work_native_fedeIn:nth-of-type(3n), .work_bot_fedeIn:nth-of-type(3n){
+  transition-delay: 0.4s;
+}
+
+.skill_fedeIn:nth-of-type(4n+1){
   transition-delay: 0s;
 }
 
-.skill:nth-of-type(4n+2){
-  transition-delay: 0.1s;
-}
-
-.skill:nth-of-type(4n+3){
+.skill_fedeIn:nth-of-type(4n+2){
   transition-delay: 0.2s;
 }
 
-.skill:nth-of-type(4n){
-  transition-delay: 0.3s;
+.skill_fedeIn:nth-of-type(4n+3){
+  transition-delay: 0.4s;
+}
+
+.skill_fedeIn:nth-of-type(4n){
+  transition-delay: 0.6s;
 }
 
 @media screen and (max-width: 1264px) {
-  .skill:nth-of-type(3n+1){
+  .skill_fedeIn:nth-of-type(3n+1){
     transition-delay: 0s;
   }
   
-  .skill:nth-of-type(3n+2){
-    transition-delay: 0.1s;
+  .skill_fedeIn:nth-of-type(3n+2){
+    transition-delay: 0.2s;
   }
   
-  .skill:nth-of-type(3n){
-    transition-delay: 0.2s;
+  .skill_fedeIn:nth-of-type(3n){
+    transition-delay: 0.4s;
   }
 }
 
 @media screen and (max-width: 960px) {
-  .work_web:nth-of-type(2n+1), .work_native:nth-of-type(2n+1), .work_bot:nth-of-type(2n+1), .skill:nth-of-type(2n+1){
+  .work_web_fedeIn:nth-of-type(2n+1), .work_native_fedeIn:nth-of-type(2n+1), .work_bot_fedeIn:nth-of-type(2n+1), .skill_fedeIn:nth-of-type(2n+1){
     transition-delay: 0s;
   }
   
-  .work_web:nth-of-type(2n), .work_native:nth-of-type(2n), .work_bot:nth-of-type(2n), .skill:nth-of-type(2n){
-    transition-delay: 0.1s;
+  .work_web_fedeIn:nth-of-type(2n), .work_native_fedeIn:nth-of-type(2n), .work_bot_fedeIn:nth-of-type(2n), .skill_fedeIn:nth-of-type(2n){
+    transition-delay: 0.2s;
   }
 }
 

@@ -19,10 +19,10 @@
         <v-container>
           <h2 class="text-h4 text-sm-h3 text-center font-weight-black">About</h2>
           <v-row justify="center">
-            <v-col cols="10" md="3" class="text-center about" :class="{fadeIn:visible_about}">
+            <v-col cols="10" md="3" class="text-center about_fedeIn1" :class="{fadeIn:visible_about}">
                 <img src="@/assets/img/profile.jpg" alt="プロフィール画像" style="width:90%;border-radius:50%;max-width:200px"/>
             </v-col>
-            <v-col cols="10" md="7" class="about" :class="{fadeIn:visible_about}">
+            <v-col cols="10" md="7" class="about_fedeIn2" :class="{fadeIn:visible_about}">
               <p>
                 はじめまして。<br>九州大学工学部土木工学科4年の中川雄介と申します。
               </p>
@@ -44,7 +44,7 @@
           <!-- web application -->
           <h3 class="mt-8">Web Application</h3>
           <v-row>
-            <v-col cols="12" sm="6" md="4" v-for="work in web_works" :key="work.name" class="work_web" :class="{fadeIn:work.visible}">
+            <v-col cols="12" sm="6" md="4" v-for="work in web_works" :key="work.name" class="work_web_fedeIn" :class="{fadeIn:work.visible}">
               <a :href="work.link" class="work-hover">
                 <div class="figure">
                   <img :src="work.imgUrl" :alt="work.alt" />
@@ -59,7 +59,7 @@
           <!-- native application -->
           <h3 class="mt-8">Native Application</h3>
           <v-row>
-            <v-col cols="12" sm="6" md="4" v-for="work in native_works" :key="work.name" class="work_native" :class="{fadeIn:work.visible}">
+            <v-col cols="12" sm="6" md="4" v-for="work in native_works" :key="work.name" class="work_native_fedeIn" :class="{fadeIn:work.visible}">
               <a :href="work.link" class="work-hover">
                 <div class="figure">
                   <img :src="work.imgUrl" :alt="work.alt" />
@@ -74,7 +74,7 @@
           <!-- line bot -->
           <h3 class="mt-8">LINE Bot</h3>
           <v-row>
-            <v-col cols="12" sm="6" md="4" v-for="work in bot_works" :key="work.name" class="work_bot" :class="{fadeIn:work.visible}">
+            <v-col cols="12" sm="6" md="4" v-for="work in bot_works" :key="work.name" class="work_bot_fedeIn" :class="{fadeIn:work.visible}">
               <a :href="work.link" class="work-hover">
                 <div class="figure">
                   <img :src="work.imgUrl" :alt="work.alt" />
@@ -95,7 +95,7 @@
         <v-container>
           <h2 class="text-h4 text-sm-h3 font-weight-black">Skill</h2>
           <v-row class="skill-list">
-            <v-col cols="12" sm="6" md="4" lg="3" v-for="skill in skills" :key="skill.name" class="skill" :class="{fadeIn:skill.visible}"> 
+            <v-col cols="12" sm="6" md="4" lg="3" v-for="skill in skills" :key="skill.name" class="skill_fedeIn" :class="{fadeIn:skill.visible}"> 
               <v-card class="mx-auto py-6" elevation="3" @click="skill.show = !skill.show">
                   <v-img :src="skill.imgUrl" :alt="skill.alt" contain max-width="80" height="150" class="my-0 mx-auto"></v-img>
                 
@@ -125,10 +125,10 @@
       <section class="py-16" id="contact">
         <v-container>
           <h2 class="text-h4 text-sm-h3 text-center font-weight-black">Contact</h2>
-          <p class="py-1 text-center contact" :class="{fadeIn:visible_contact}">
+          <p class="py-1 text-center contact_fedeIn1" :class="{fadeIn:visible_contact}">
             お問い合わせは、<br class="sp-only" />SNSまたはメールからお願いいたします。
           </p>
-          <v-layout justify-center class="contact" :class="{fadeIn:visible_contact}">
+          <v-layout justify-center class="contact_fedeIn2" :class="{fadeIn:visible_contact}">
             <a href="https://twitter.com/uke_9912" target="_blank" rel="noopener" class="px-3">
               <img src="@/assets/img/twitter.svg" width="40" alt="twitterのアイコン" />
             </a>
@@ -360,31 +360,31 @@ export default {
         let top = document.getElementById("about").getBoundingClientRect().top;
         this.visible_about = top < window.innerHeight - 300;
       }
-      let work_web_elements = document.getElementsByClassName("work_web");
-      for( let i = 0 ; i < work_web_elements.length ; i ++ ) {
+      let work_web_fedeIn_elements = document.getElementsByClassName("work_web_fedeIn");
+      for( let i = 0 ; i < work_web_fedeIn_elements.length ; i ++ ) {
         if(!this.web_works[i].visible){
-          let top = work_web_elements[i].getBoundingClientRect().top;
+          let top = work_web_fedeIn_elements[i].getBoundingClientRect().top;
           this.web_works[i].visible = top < window.innerHeight - 200;
         }
       }
-      let work_native_elements = document.getElementsByClassName("work_native");
-      for( let i = 0 ; i < work_native_elements.length ; i ++ ) {
+      let work_native_fedeIn_elements = document.getElementsByClassName("work_native_fedeIn");
+      for( let i = 0 ; i < work_native_fedeIn_elements.length ; i ++ ) {
         if(!this.native_works[i].visible){
-          let top = work_native_elements[i].getBoundingClientRect().top;
+          let top = work_native_fedeIn_elements[i].getBoundingClientRect().top;
           this.native_works[i].visible = top < window.innerHeight - 200;
         }
       }
-      let work_bot_elements = document.getElementsByClassName("work_bot");
-      for( let i = 0 ; i < work_bot_elements.length ; i ++ ) {
+      let work_bot_fedeIn_elements = document.getElementsByClassName("work_bot_fedeIn");
+      for( let i = 0 ; i < work_bot_fedeIn_elements.length ; i ++ ) {
         if(!this.bot_works[i].visible){
-          let top = work_bot_elements[i].getBoundingClientRect().top;
+          let top = work_bot_fedeIn_elements[i].getBoundingClientRect().top;
           this.bot_works[i].visible = top < window.innerHeight - 200;
         }
       }
-      let skill_elements = document.getElementsByClassName("skill");
-      for( let i = 0 ; i < skill_elements.length ; i ++ ) {
+      let skill_fedeIn_elements = document.getElementsByClassName("skill_fedeIn");
+      for( let i = 0 ; i < skill_fedeIn_elements.length ; i ++ ) {
         if(!this.skills[i].visible){
-          let top = skill_elements[i].getBoundingClientRect().top;
+          let top = skill_fedeIn_elements[i].getBoundingClientRect().top;
           this.skills[i].visible = top < window.innerHeight - 200;
         }
       }
