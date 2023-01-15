@@ -13,16 +13,24 @@
                     </slide>
                 </carousel>
               </p>
-              <h3>開発の経緯</h3>
-              <p v-html="description"></p>
-              <h3>使用言語/ツール</h3>
-              <v-layout align-center overflow-x-auto>
-                <img v-for="skill in skills" :key="skill.name" :src="skill.imgUrl" :alt="skill.name + 'のアイコン'" v-b-tooltip.hover.bottom.v-dark :title="skill.name" width="60" class="mr-5">
-              </v-layout>
-              <h3>デザインについて</h3>
-              <p v-html="design"></p>
-              <h3>コーディングについて</h3>
-              <p v-html="coding"></p>
+              <div id="fadeIn_element1" :class="{fadeIn:visible1}">
+                <h3>開発の経緯</h3>
+                <p v-html="description"></p>
+              </div>
+              <div id="fadeIn_element2" :class="{fadeIn:visible2}">
+                <h3>使用言語/ツール</h3>
+                <v-layout align-center overflow-x-auto :class="{fadeIn:visible2}" class="mb-5">
+                  <img v-for="skill in skills" :key="skill.name" :src="skill.imgUrl" :alt="skill.name + 'のアイコン'" v-b-tooltip.hover.bottom.v-dark :title="skill.name" width="60" class="mr-5">
+                </v-layout>
+              </div>
+              <div id="fadeIn_element3" :class="{fadeIn:visible3}">
+                <h3>デザインについて</h3>
+                <p v-html="design"></p>
+              </div>
+              <div id="fadeIn_element4" :class="{fadeIn:visible4}">
+                <h3>コーディングについて</h3>
+                <p v-html="coding"></p>
+              </div>
               <v-layout class="links mt-10" justify-center wrap>
                 <router-link to="/#works" class="works-link mx-2">作品一覧へ</router-link>
                 <a :href="githubURL" target="_blank" rel="noopener" class="github-link mx-2" v-if="hasGithubURL">github.comで詳しく<fa :icon="['fas', 'arrow-up-right-from-square']" class="external-link-icon" /></a>
@@ -49,8 +57,41 @@ export default {
   name: "shared-work",
   data: function () {
     return {
+    visible1: false,
+    visible2: false,
+    visible3: false,
+    visible4: false,
     flag: false,
     };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+    if (window.pageYOffset == 0) {
+      this.visible1 = false;
+      this.visible2 = false;
+      this.visible3 = false;
+      this.visible4 = false;
+    }
+  },
+  methods: {
+    handleScroll() {
+      if (!this.visible1) {
+        let top = document.getElementById("fadeIn_element1").getBoundingClientRect().top;
+        this.visible1 = top < window.innerHeight - 200;
+      }
+      if (!this.visible2) {
+        let top = document.getElementById("fadeIn_element2").getBoundingClientRect().top;
+        this.visible2 = top < window.innerHeight - 200;
+      }
+      if (!this.visible3) {
+        let top = document.getElementById("fadeIn_element3").getBoundingClientRect().top;
+        this.visible3 = top < window.innerHeight - 200;
+      }
+      if (!this.visible4) {
+        let top = document.getElementById("fadeIn_element4").getBoundingClientRect().top;
+        this.visible4 = top < window.innerHeight - 200;
+      }
+    },
   },
   props: ["title", "description","design","coding","hasGithubURL","githubURL","hasServiceURL","serviceURL","screenshots","skills"],
     sharedHeader,
@@ -61,6 +102,17 @@ export default {
 </script>
 
 <style scoped>
+#fadeIn_element1, #fadeIn_element2, #fadeIn_element3, #fadeIn_element4{
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 1.0s;
+}
+
+#fadeIn_element1.fadeIn, #fadeIn_element2.fadeIn, #fadeIn_element3.fadeIn, #fadeIn_element4.fadeIn{
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .header {
   position: fixed;
   top: 0;
