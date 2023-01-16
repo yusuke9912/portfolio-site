@@ -53,6 +53,7 @@
                   </div>
                 </div>
               </a>
+              <p class="text-center d-block d-sm-none px-4 text-subtitle-2" v-html="work.description"></p>
             </v-col>
           </v-row>
           <!-- /web application -->
@@ -68,6 +69,7 @@
                   </div>
                 </div>
               </a>
+              <p class="text-center d-block d-sm-none px-4 text-subtitle-2" v-html="work.description"></p>
             </v-col>
           </v-row>
           <!-- /native application -->
@@ -83,6 +85,7 @@
                   </div>
                 </div>
               </a>
+              <p class="text-center d-block d-sm-none px-4 text-subtitle-2" v-html="work.description"></p>
             </v-col>
           </v-row>
         </v-container>
@@ -152,6 +155,7 @@
 
 
 <script>
+document.documentElement.className = 'no-fouc';
 import sharedHeader from "@/components/shared/Header";
 import sharedFooter from "@/components/shared/Footer";
 
@@ -348,6 +352,7 @@ export default {
     };
   },
   mounted() {
+    document.querySelector('.no-fouc').classList.remove('no-fouc');
     window.addEventListener("scroll", this.handleScroll);
     if (window.pageYOffset == 0) {
       this.visible_about = false;
