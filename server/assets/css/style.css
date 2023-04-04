@@ -3,8 +3,10 @@
   --accent-color:#a6d3c8;
 }
 
+.no-fouc { display: none; }
+
 body {
-  font-family:Roboto , sans-serif;
+  font-family:"Roboto" , sans-serif;
   font-size: 16px;
   letter-spacing: 0.05em;
   color: var(--main-color);

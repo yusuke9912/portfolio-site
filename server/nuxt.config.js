@@ -20,7 +20,12 @@ export default {
       { name: 'twitter:card', content: 'summary_large_image' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap',
+      },
     ]
   },
 
@@ -81,6 +86,7 @@ export default {
   },
 
   vuetify: {
-    defaultAssets: false,
+    customVariables: ['~/assets/css/variables.scss'],
+    treeShake: true,
   }
 }
